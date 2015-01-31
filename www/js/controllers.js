@@ -133,4 +133,26 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+})
+
+
+
+
+// Donation Controller
+// Will implement Payments Service
+.controller('DonationCtrl', function($scope) {
+
+})
+
+
+// Donation Thankyou Controller
+.controller('DonationThankyouCtrl', function($scope) {
+
+});
+
+
+// Donor Edit Profile Controller
+// Implement Local Customer Service
+.controller('DonorEditProfileCtrl', function($scope) {
+
 });

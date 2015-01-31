@@ -93,4 +93,36 @@ angular.module('starter.services', [])
       return friends[friendId];
     }
   }
+})
+
+
+// Integrates with internal payment API
+.factory('SET.Payments', function() {
+
+  // Endpoint base path
+  var baseurl = 'http://battlehack2015.azurewebsites.net/v1/Payment/';
+
+
+  // Create a customer on the Payment System
+  var createCustomer = function(customer) {
+
+  }
+
+  // Create a payment method
+  var createCustomerPaymentSource = function(customerId, paymentMethod) {
+
+  }
+
+  // Make a Payment
+  var payOnce = function(customerToken, paymentMethod, amount) {
+    
+  }
+
+  // Get a client token from the side
+  var getClientToken = function(customerId) {
+    
+    
+  }
+
+
 });
