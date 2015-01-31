@@ -117,6 +117,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     small {
       font-size:14px;
       display:block;
+      color:#999;
     }
   }
 }
@@ -293,4 +294,13 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 .align-center {
   text-align:center;
+}
+
+.tabs-icon-top > .tabs .tab-item {
+  line-height:45px !important;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active {
+
+  color:#333;
 }
