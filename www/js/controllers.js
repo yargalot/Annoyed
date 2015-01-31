@@ -114,8 +114,6 @@ angular.module('starter.controllers', [])
   $scope.charity = charity;
   
 
-
-
   $scope.contributors = [
     {
       image: placeimagepath + 1
@@ -131,8 +129,9 @@ angular.module('starter.controllers', [])
     }
   ];
 
+
   // Assign a cover image
-  if (charity.data.name == 'Cure Cancer Australia Foundation') {
+  if (charity.data.name == 'Cure Cancer Australia Foundation' || charity.data.name == 'Australian Cancer Research Foundation') {
     $scope.coverImage = 'img/cover-curecancer.jpg';
   } else {
     $scope.coverImage = 'img/cover-childfund.jpg';
