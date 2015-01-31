@@ -1,16 +1,16 @@
 <ion-view view-title="Charity">
   <ion-content class="padding">
-    
+
     <div class="padding donation-title">
       <h2 class="font-light centered red">Thanks for donating!</h2>
     </div>
 
-    <div class="padding lovecharities-logo">
-      <img align="center" src="img/logo.svg" width="200">
+    <div class="padding lovecharities-logo" style="text-align:center;">
+      <img style="display:inline-block" align="center" src="img/logo.svg" width="200">
     </div>
 
-    <div class="padding donation-thankyou-text">
-      <p>You have successfully donated <strong>{{donation.amount}}</strong> to <strong>{{donation.charity}}</strong></p>
+    <div class="padding donation-thankyou-text align-center">
+      <p style="text-align:center;">You have successfully donated <strong>{{donation.amount}}</strong> to <strong>{{donation.charity}}</strong></p>
     </div>
 
     <div class="padding donation-next">
@@ -21,9 +21,6 @@
         Back to Charity
       </button>
     </div>
-
-
-    {{donation}}
 
   </ion-content>
 </ion-view>

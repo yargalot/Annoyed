@@ -7080,6 +7080,8 @@ a.button {
 .donation-title h2 {
   font-weight: 300;
   text-align: center; }
+  .donation-title h2.red {
+    color: #D31A3D; }
 
 .donation-connection {
   margin-left: 30px;
@@ -7137,3 +7139,11 @@ a.button {
       left: 40px; }
     .donation-connection .love-charities-divider:after {
       right: 40px; }
+
+.lovecharities-logo {
+  text-align: center; }
+  .lovecharities-logo img {
+    display: inline-block; }
+
+.align-center {
+  text-align: center; }
