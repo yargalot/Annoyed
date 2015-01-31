@@ -207,7 +207,45 @@ angular.module('starter.controllers', [])
 
 // Donation Controller
 // Will implement Payments Service
-.controller('DonationCtrl', function($scope) {
+.controller('DonationCtrl', function($scope, $stateParams, $http, braintreeKey) {
+
+  console.log(braintreeKey);
+  var key = braintreeKey.data;
+  var charityId = $stateParams.id;
+
+  $scope.donationAmount = 0;
+
+  braintree.setup( key, "dropin", {
+            container: "dropin",
+            paypal: {
+                singleUse: true
+            },
+            paymentMethodNonceReceived: function (event, nonce) {
+              // do something
+              $scope.donationStart(nonce);
+            }
+      });
+
+
+
+
+    $scope.donationStart = function(nonce) {
+
+      var params = {
+        "Frequency": "none",
+        "PaymentMethodNonce": nonce,
+        "Amount": $scope.donationAmount,
+        "CustomerId": localStorage.custKey,
+        "CharityId": charityId
+      }
+
+      $http.post('http://battlehack2015.azurewebsites.net/v1/Payment/CheckOut', params)
+        .success(function() {
+          console.log('DONATION DONE')
+        })
+
+
+    };
 
 })
 
