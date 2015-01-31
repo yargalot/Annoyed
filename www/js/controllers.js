@@ -126,6 +126,7 @@ angular.module('starter.controllers', [])
 
   $scope.userLoggedIn = localStorage.customerKey;
 
+
   $scope.goToCharities = function() {
     $state.go('tab.charities')
   }
@@ -200,6 +201,8 @@ angular.module('starter.controllers', [])
       };
 
       console.log(params);
+
+      localStorage.setItem('customerName', params.FirstName)
 
       $http.post('http://battlehack2015.azurewebsites.net/v1/customers', params)
         .success(function(customerKey) {
