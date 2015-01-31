@@ -1,22 +1,42 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, $timeout, $state, $http) {
+.controller('DashCtrl', function($scope, $rootScope, $timeout, $state, $http) {
 
+
+  // Update Donor Transactions
+  
+
+  var updateDonorTransactions = function() {
   if (localStorage.customerKey) {
-    $http.get('http://battlehack2015.azurewebsites.net:80/v1/customers/'+ localStorage.customerKey +'/donations')
-      .success(function(data) {
-        $scope.transactions = data;
+      
+      $scope.donationsLoading = true;
+      $http.get('http://battlehack2015.azurewebsites.net:80/v1/customers/'+ localStorage.customerKey +'/donations')
+        .success(function(data) {
 
-        $scope.transactionsTotal = 0;
+          $scope.transactions = data;
+          $scope.transactionsTotal = 0;
+          angular.forEach($scope.transactions, function(transaction) {
+            $scope.transactionsTotal += transaction.Amount;
+          });
+          $scope.donationsLoading = false;
 
-        angular.forEach($scope.transactions, function(transaction) {
-          $scope.transactionsTotal += transaction.Amount;
-        })
+        });
 
-      });
-
+    }
   }
 
+  // Fire initial update of donor transactions
+  updateDonorTransactions();
+
+  // Register handler to detect change and reload
+  $rootScope.$on('updateDonations', function() {
+    updateDonorTransactions();
+  });
+
+
+  /**
+    * Begin Beacon Hacks.
+  **/
   $scope.beacons = [];
 
   var blueCatsAppToken = '4acb4443-bfbc-4c95-bea0-8cafee513a19';
@@ -232,7 +252,7 @@ angular.module('starter.controllers', [])
 
 // Donation Controller
 // Will implement Payments Service
-.controller('DonationCtrl', function($scope, $state, $stateParams, $http, braintreeKey, charity) {
+.controller('DonationCtrl', function($scope, $rootScope, $state, $stateParams, $http, braintreeKey, charity) {
 
   console.log(braintreeKey);
   var key = braintreeKey.data;
@@ -275,6 +295,7 @@ angular.module('starter.controllers', [])
             cordova.plugins.Keyboard.close();
           }
           $state.go('tab.thanks', {id: charityId});
+          $rootScope.$broadcast('updateDonations', {});
         })
 
 
@@ -286,6 +307,7 @@ angular.module('starter.controllers', [])
 // Donation Thankyou Controller
 .controller('ThanksCtrl', function($scope, donation) {
   $scope.donation = donation.data[0];
+  console.log($scope.donation);
 })
 
 
