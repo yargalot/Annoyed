@@ -114,6 +114,7 @@ angular.module('starter.controllers', [])
 
   $scope.charity = charity;
 
+  $scope.userLoggedIn = localStorage.customerKey;
 
   $scope.contributors = [
     {
@@ -164,24 +165,12 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('FriendsCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
-})
-
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
-})
-
-.controller('AccountCtrl', function($scope, $http) {
+.controller('AccountCtrl', function($scope, $http, $state) {
   $scope.settings = {
     enableFriends: true
   };
 
-
+  $scope.userLoggedIn = localStorage.customerKey;
 
   $scope.accountSubmit = function() {
       var params = {
@@ -196,8 +185,17 @@ angular.module('starter.controllers', [])
       $http.post('http://battlehack2015.azurewebsites.net/v1/customers', params)
         .success(function(customerKey) {
           localStorage.setItem('customerKey', customerKey);
+          $scope.userLoggedIn = localStorage.customerKey;
+          $state.go('tab.dash');
+
         });
 
+  };
+
+  $scope.logout = function() {
+    localStorage.removeItem('customerKey');
+    $scope.userLoggedIn = localStorage.customerKey;
+    $state.go('tab.dash');
   };
 
 })

@@ -1,9 +1,10 @@
 <ion-view view-title="Account">
     <ion-header-bar class="bar-subheader">
-      <h2 class="title">Make a profile</h2>
+      <h2 class="title" ng-hide="userLoggedIn">Make a profile</h2>
+      <h2 class="title" ng-show="userLoggedIn">Your Profile</h2>
     </ion-header-bar>
   <ion-content>
-    <ng-form name="accountCreation">
+    <ng-form ng-hide="userLoggedIn" name="accountCreation">
       <ion-list>
         <label class="item item-input">
           <span class="input-label">First Name</span>
@@ -38,5 +39,9 @@
         </button>
       </ion-list>
     </ng-form>
+
+    <button ng-show="userLoggedIn" ng-click="logout()" class="button button-block">
+      Logout
+    </button>
   </ion-content>
 </ion-view>
