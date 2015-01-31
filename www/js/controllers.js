@@ -205,7 +205,9 @@ angular.module('starter.controllers', [])
   var key = braintreeKey.data;
   var charityId = $stateParams.id;
 
-  $scope.donationAmount = 0;
+  $scope.formValues = {
+    donationAmount: 0
+  };
 
   braintree.setup( key, "dropin", {
             container: "dropin",
@@ -226,13 +228,14 @@ angular.module('starter.controllers', [])
       var params = {
         "Frequency": "none",
         "PaymentMethodNonce": nonce,
-        "Amount": $scope.donationAmount,
+        "Amount": $scope.formValues.donationAmount,
         "CustomerId": localStorage.custKey,
         "CharityId": charityId
       }
 
       $http.post('http://battlehack2015.azurewebsites.net/v1/Payment/CheckOut', params)
-        .success(function() {
+        .success(function(response) {
+
           console.log('DONATION DONE')
         })
 
