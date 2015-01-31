@@ -112,7 +112,7 @@ angular.module('starter.controllers', [])
   var placeimagepath = 'http://lorempixel.com/75/75/people/';
 
   $scope.charity = charity;
-  
+
 
   $scope.contributors = [
     {
@@ -206,13 +206,15 @@ angular.module('starter.controllers', [])
 
 // Donation Controller
 // Will implement Payments Service
-.controller('DonationCtrl', function($scope, $stateParams, $http, braintreeKey) {
+.controller('DonationCtrl', function($scope, $state, $stateParams, $http, braintreeKey) {
 
   console.log(braintreeKey);
   var key = braintreeKey.data;
   var charityId = $stateParams.id;
 
-  $scope.donationAmount = 0;
+  $scope.formValues = {
+    donationAmount: 0
+  };
 
   braintree.setup( key, "dropin", {
             container: "dropin",
@@ -225,22 +227,21 @@ angular.module('starter.controllers', [])
             }
       });
 
-
-
-
     $scope.donationStart = function(nonce) {
 
       var params = {
         "Frequency": "none",
         "PaymentMethodNonce": nonce,
-        "Amount": $scope.donationAmount,
+        "Amount": $scope.formValues.donationAmount,
         "CustomerId": localStorage.custKey,
         "CharityId": charityId
       }
 
       $http.post('http://battlehack2015.azurewebsites.net/v1/Payment/CheckOut', params)
-        .success(function() {
-          console.log('DONATION DONE')
+        .success(function(response) {
+
+          console.log('DONATION DONE');
+          $state.go('tab.charity.thanks');
         })
 
 
@@ -250,8 +251,8 @@ angular.module('starter.controllers', [])
 
 
 // Donation Thankyou Controller
-.controller('DonationThankyouCtrl', function($scope) {
-
+.controller('ThanksCtrl', function($scope, donation) {
+  $scope.donation = donation.data[0];
 })
 
 
