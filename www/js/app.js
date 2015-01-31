@@ -50,8 +50,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state('tab.charity', {
     url: '/charity/:id',
+    abstract: true,
     views: {
-      'tab-dash': {
+      'tab-charities': {
+        template: '<ui-view name="page-charities"></ui-view>'
+      }
+    }
+  })
+
+  .state('tab.charity.summary', {
+    url: '',
+    views: {
+      'page-charities': {
         templateUrl: 'templates/charity-detail.html',
         controller: 'CharityCtrl',
         resolve: {
@@ -66,10 +76,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.donate', {
+  .state('tab.charity.dontate', {
     url: '/donate',
     views: {
-      'tab-charities': {
+      'page-charities': {
         templateUrl: 'templates/charity-donate.html',
         controller: 'DonateCtrl',
       }

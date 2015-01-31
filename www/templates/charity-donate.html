@@ -1,6 +1,16 @@
 <ion-view view-title="Charity">
   <ion-content class="padding">
-    <h1>Charity Donate</h1>
+    <h1>Your donation will help a cause</h1>
+
+    <p>Here is some donation stuff</p>
+    <label class="item item-input">
+      <span class="input-label">Number</span>
+      <input type="number" ng-model="donationAmount">
+    </label>
+
+    <button class="button" ng-click="donationStart()">
+      Donate Now!
+    </button>
 
   </ion-content>
 </ion-view>
