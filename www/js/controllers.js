@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, $timeout) {
+.controller('DashCtrl', function($scope, $timeout, $state) {
 
   $scope.beacons = [];
 
@@ -37,13 +37,12 @@ angular.module('starter.controllers', [])
 
   }, false);
 
-  $scope.refresh = {
+  $scope.goCharity = function() {
+    var charityId = this.beacon.name.split('|')[1];
 
+    $state.go('charity', {id : charityId} );
   }
 
-  $timeout(function() {
-
-  }, 2000);
 
   function purringSuccess() {
       console.log('Spurring')
@@ -66,7 +65,6 @@ angular.module('starter.controllers', [])
       watchIdForEnterBeacon = com.bluecats.beacons.watchEnterBeacon(
           function(watchData){
               //$scope.status = 'beacon found';
-              console.log('Beacon Found');
               displayBeacons('Entered', watchData);
           }, logError, beaconWatchOptions);
 
@@ -93,8 +91,7 @@ angular.module('starter.controllers', [])
       var beacons = watchData.filteredMicroLocation.beacons;
       var beaconNames = [];
 
-      console.log('Beacon Found !!!!!');
-      console.log(watchData);
+      console.log('Beacons Found !!!!!');
       $scope.watchData = watchData;
       $scope.description = description;
 
@@ -107,6 +104,13 @@ angular.module('starter.controllers', [])
   function logError() {
       console.log('Error occurred watching beacons');
   }
+
+})
+
+.controller('CharityCtrl', function($scope, charity) {
+  var url = 'http://battlehack2015.azurewebsites.net/v1/charities/248209';
+
+  $scope.charity = charity;
 
 })
 
