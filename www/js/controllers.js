@@ -139,11 +139,18 @@ angular.module('starter.controllers', [])
   };
 
   $scope.accountSubmit = function() {
-      var params = this.accountCreation;
+      var params = {
+        "FirstName": this.accountCreation.fistName.$modelValue,
+        "LastName": this.accountCreation.lastName.$modelValue,
+        "Company": this.accountCreation.company.$modelValue,
+        "Email": this.accountCreation.email.$modelValue,
+      };
 
-      $http.post('http://battlehack2015.azurewebsites.net//v1/customers', params)
-        .success(function(response) {
-          console.log('test')
+      console.log(params);
+
+      $http.post('http://battlehack2015.azurewebsites.net/v1/customers', params)
+        .success(function(customerKey) {
+          localStorage.setItem('customerKey', customerKey);
         });
 
   };
