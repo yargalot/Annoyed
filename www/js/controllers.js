@@ -2,6 +2,8 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, $timeout) {
 
+  $scope.beacons = [];
+
   var blueCatsAppToken = '4acb4443-bfbc-4c95-bea0-8cafee513a19';
 
   var watchIdForEnterBeacon,watchIdForExitBeacon,watchIdForClosestBeacon = null;
@@ -21,7 +23,7 @@ angular.module('starter.controllers', [])
       filter:{
           //Configure additional filters here e.g.
           //sitesName:['BlueCats HQ', 'Another Site'],
-          //categoriesNamed:['Entrance'],
+          categoriesNamed:['Charities'],
           //maximumAccuracy:0.5
           //etc.
       }
@@ -58,14 +60,21 @@ angular.module('starter.controllers', [])
           com.bluecats.beacons.clearWatch(watchIdForExitBeacon);
       };
 
+      $scope.status = 'Checking';
+      console.log('Checking');
+
       watchIdForEnterBeacon = com.bluecats.beacons.watchEnterBeacon(
           function(watchData){
+              //$scope.status = 'beacon found';
+              console.log('Beacon Found');
               displayBeacons('Entered', watchData);
           }, logError, beaconWatchOptions);
 
       watchIdForExitBeacon = com.bluecats.beacons.watchExitBeacon(
           function(watchData){
-              displayBeacons('Exited', watchData);
+            //$scope.status = 'beacon lost';
+            console.log('Beacon Lost');
+            //displayBeacons('Exited', watchData);
           }, logError, beaconWatchOptions);
   }
 
@@ -84,8 +93,15 @@ angular.module('starter.controllers', [])
       var beacons = watchData.filteredMicroLocation.beacons;
       var beaconNames = [];
 
-      $scope.watchData = watchdata;
+      console.log('Beacon Found !!!!!');
+      console.log(watchData);
+      $scope.watchData = watchData;
       $scope.description = description;
+
+      $scope.beacons = watchData.filteredMicroLocation.beacons;
+
+      $scope.$apply();
+
   }
 
   function logError() {
