@@ -48,6 +48,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.charity', {
+    url: '/charity/:id',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/charity-detail.html',
+        controller: 'CharityCtrl',
+        resolve: {
+          charity: function($stateParams, $http) {
+            return $http.get('http://battlehack2015.azurewebsites.net/v1/charities/' + $stateParams.id)
+            .success(function(data) {
+              return data;
+            })
+          }
+        }
+      }
+    }
+  })
+
   .state('tab.chats', {
       url: '/chats',
       views: {
