@@ -1,14 +1,5 @@
 <ion-view view-title="LoveCharity">
   <ion-content class="">
-    <!--     <div>
-      {{watchData}}
-    </div>
-    <div>
-      {{description}}
-    </div> -->
-
-
-    <h2 ng-if="!beacons">Searching for charities</h2>
 
     <div class="dashboard-profile">
       <img src="/img/cover-curecancer.jpg" alt="">
@@ -25,10 +16,8 @@
     <div class="item item-divider" ng-if="beacons.length">
       Charities around me
     </div>
-
     <ion-list>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="beacon in beacons" type="item-text-wrap" href="#/tab/charity/{{beacon.name.split('|')[1]}}">
-
         <h2>{{beacon.name.split('|')[0]}}</h2>
         <p>{{beacon.proximity}}</p>
         <p>{{beacon.name.split('|')[1]}}</p>
@@ -54,7 +43,7 @@
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="transaction in transactions">
         <img src="/img/ionic.png" alt="">
         <h2>{{transaction.CharityName}}</h2>
-        <p>You donated {{transaction.Amount}}</p>
+        <p>You donated ${{transaction.Amount}}</p>
         <i class="icon ion-chevron-right icon-accessory"></i>
       </ion-item>
     </ion-list>
