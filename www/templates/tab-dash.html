@@ -8,15 +8,9 @@
     </div> -->
     <h2 ng-if="!beacons">Searching for charities</h2>
 
-<!--     <div class="list card" ng-click="goCharity()" ng-repeat="beacon in beacons">
-  <div class="item item-divider">{{beacon.name.split('|')[0]}}</div>
-  <div class="item item-body">
-    <p>
-      {{beacon.proximity}}
-    </p>
-    <p>{{beacon.name.split('|')[1]}}</p>
-  </div>
-</div> -->
+    <div class="item item-divider" ng-if="beacons.length">
+      Charities around me
+    </div>
 
     <ion-list>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="beacon in beacons" type="item-text-wrap" href="#/tab/charity/{{beacon.name.split('|')[1]}}">
@@ -28,6 +22,18 @@
       </ion-item>
     </ion-list>
 
+    <div class="item item-divider">
+      My Transactions
+    </div>
+
+    <div class="list card" ng-repeat="transaction in transactions">
+      <div class="item item-divider">{{transaction.CharityId}}</div>
+      <div class="item item-body">
+        <p>
+          {{transaction.Amount}}
+        </p>
+      </div>
+    </div>
 
   </ion-content>
 </ion-view>

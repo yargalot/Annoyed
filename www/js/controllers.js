@@ -1,6 +1,16 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, $timeout, $state) {
+.controller('DashCtrl', function($scope, $timeout, $state, $http) {
+
+  if (localStorage.customerKey) {
+    $http.get('http://battlehack2015.azurewebsites.net:80/v1/customers/'+ localStorage.customerKey +'/donations')
+      .success(function(data) {
+        $scope.transactions = data;
+      });
+
+  }
+
+
 
   $scope.beacons = [];
 
@@ -244,8 +254,9 @@ angular.module('starter.controllers', [])
       $http.post('http://battlehack2015.azurewebsites.net/v1/Payment/CheckOut', params)
         .success(function(response) {
 
-          console.log('DONATION DONE');
-          cordova.plugins.Keyboard.close();
+          if (cordova) {
+            cordova.plugins.Keyboard.close();
+          }
           $state.go('tab.thanks', {id: charityId});
         })
 
