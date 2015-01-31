@@ -50,18 +50,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state('tab.charity', {
     url: '/charity/:id',
-    abstract: true,
     views: {
       'tab-charities': {
-        template: '<ui-view name="page-charities"></ui-view>'
-      }
-    }
-  })
-
-  .state('tab.charity.summary', {
-    url: '',
-    views: {
-      'page-charities': {
         templateUrl: 'templates/charity-detail.html',
         controller: 'CharityCtrl',
         resolve: {
@@ -76,15 +66,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.charity.dontate', {
-    url: '/donate',
+  .state('tab.dontate', {
+    url: '/charity/:id/donate',
     views: {
-      'page-charities': {
+      'tab-charities': {
         templateUrl: 'templates/charity-donate.html',
         controller: 'DonationCtrl',
         resolve: {
           braintreeKey: function($http) {
-            return $http.get('http://battlehack2015.azurewebsites.net/v1/Payment/ClientToken?customerId=' + localStorage.custKey)
+            return $http.get('http://battlehack2015.azurewebsites.net/v1/Payment/ClientToken?customerId=' + localStorage.customerKey)
               .success(function(key) {
                 return key;
               })
@@ -94,15 +84,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.charity.thanks', {
-    url: '/thanks',
+  .state('tab.thanks', {
+    url: '/charity/:id/thanks',
     views: {
-      'page-charities': {
+      'tab-charities': {
         templateUrl: 'templates/charity-thanks.html',
         controller: 'ThanksCtrl',
         resolve: {
           donation: function($http) {
-            return $http.get('http://battlehack2015.azurewebsites.net:80/v1/customers/'+ localStorage.custKey +'/donations')
+            return $http.get('http://battlehack2015.azurewebsites.net:80/v1/customers/'+ localStorage.customerKey +'/donations')
               .success(function(donations) {
                 return donations;
               })
