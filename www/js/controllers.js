@@ -107,7 +107,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('CharityCtrl', function($scope, charity) {
+.controller('CharityCtrl', function($scope, $http, charity) {
   var url = 'http://battlehack2015.azurewebsites.net/v1/charities/248209';
   var placeimagepath = 'http://lorempixel.com/75/75/people/';
 
@@ -139,11 +139,27 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
+.controller('charitiesCtrl', function($scope, $http, charities) {
+  $scope.charities = charities.data;
+
+  $scope.searchTerms = '';
+
+  $scope.charitySearch = function() {
+
+      if (!this.searchTerms) {
+        $scope.charities = charities.data;
+        return
+      }
+
+
+      $http.get('http://battlehack2015.azurewebsites.net:80/v1/charities/search?name=' + this.searchTerms)
+        .success(function(response) {
+          console.log(response)
+
+          $scope.charities = response;
+        });
   };
+
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
@@ -158,10 +174,30 @@ angular.module('starter.controllers', [])
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, $http) {
   $scope.settings = {
     enableFriends: true
   };
+
+
+
+  $scope.accountSubmit = function() {
+      var params = {
+        "FirstName": this.accountCreation.fistName.$modelValue,
+        "LastName": this.accountCreation.lastName.$modelValue,
+        "Company": this.accountCreation.company.$modelValue,
+        "Email": this.accountCreation.email.$modelValue,
+      };
+
+      console.log(params);
+
+      $http.post('http://battlehack2015.azurewebsites.net/v1/customers', params)
+        .success(function(customerKey) {
+          localStorage.setItem('customerKey', customerKey);
+        });
+
+  };
+
 })
 
 

@@ -66,12 +66,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.charities', {
+      url: '/charities',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-charities': {
+          templateUrl: 'templates/tab-charities.html',
+          controller: 'charitiesCtrl',
+          resolve: {
+            charities: function($stateParams, $http) {
+              return $http.get('http://battlehack2015.azurewebsites.net/v1/charities/nearby')
+              .success(function(data) {
+                return data;
+              })
+            }
+          }
         }
       }
     })
