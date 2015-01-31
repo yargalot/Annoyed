@@ -108,13 +108,18 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('CharityCtrl', function($scope, $http, charity) {
+.controller('CharityCtrl', function($scope, $http, $stateParams, charity) {
   var url = 'http://battlehack2015.azurewebsites.net/v1/charities/248209';
   var placeimagepath = 'http://lorempixel.com/75/75/people/';
 
   $scope.charity = charity;
 
   $scope.userLoggedIn = localStorage.customerKey;
+
+  $http.get('http://battlehack2015.azurewebsites.net:80/v1/charities/'+  $stateParams.id +'/donations/stats')
+    .success(function(donaters) {
+      $scope.donaters = donaters;
+    });
 
   $scope.contributors = [
     {
