@@ -15,9 +15,45 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$stable:                          #D31A3D !default;
+$assertive:                       #D31A3D !default;
+$bar-stable-text:                     #fff    !default;
+
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+
+
+
+// Other Styles for specific parts of the app
+.name-header {
+  .name-header-left {
+    float: left
+  }
+}
+
+.horizontal-list {
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.contributor-lists {
+  ul {
+    li {
+      margin-right: 6px;
+      img {
+        max-width: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
 

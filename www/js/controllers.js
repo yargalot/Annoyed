@@ -131,9 +131,6 @@ angular.module('starter.controllers', [])
     },
     {
       image: placeimagepath + 5
-    },
-    {
-      image: placeimagepath + 6
     }
   ];
 
