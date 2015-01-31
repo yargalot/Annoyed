@@ -17,8 +17,9 @@ $dark:                            #444 !default;
 
 $stable:                          #D31A3D !default;
 $assertive:                       #D31A3D !default;
-$bar-stable-text:                     #fff    !default;
-
+$bar-stable-text:                 #fff    !default;
+$font-family-sans-serif:          "Roboto", "Helvetica Neue", sans-serif !default;
+$font-family-light-sans-serif:    "Roboto-Light", "HelveticaNeue-Light", sans-serif-light !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -33,7 +34,31 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   .name-header-left {
     float: left
   }
+
+  .name-header-right {
+    padding-left: 120px;
+
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 13px;
+      color: #666;
+    }
+  }
 }
+
+
+
+
+
+
+.item {
+  .content-paragraph {
+    white-space: normal;
+  }
+}
+
 
 .horizontal-list {
   ul {
@@ -46,11 +71,19 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 .contributor-lists {
   ul {
+    margin-top: 6px;
     li {
       margin-right: 6px;
       img {
         max-width: 40px;
         border-radius: 50%;
+      }
+      &.morelink {
+        a {
+          display: inline-block;
+          padding-bottom: 6px;
+          color: black;
+        }
       }
     }
   }

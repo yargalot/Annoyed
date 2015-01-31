@@ -3,6 +3,7 @@
 
     <!-- BEGIN // Background section-->
     <div class="background-header">
+      <img src="">
 
     </div>
 
@@ -14,14 +15,14 @@
       </div>
       <div class="name-header-right">
         <h2>{{charity.data.name}} <span class="verified-tag"></span></h2>
-        <p>{{charity.data.description}}</p>
+        <p>{{charity.data.impactStatementWhat}}</p>
       </div>
     </div>
 
     <!-- BEGIN // Donate-->
     <div class="padding">
       <button class="button button-block button-assertive">
-        Donate
+        DONATE
       </button>
     </div>
 
@@ -36,7 +37,7 @@
             <li ng-repeat="contributor in contributors">
               <img class="round" ng-src="{{contributor.image}}">
             </li>
-            <li>
+            <li class="morelink">
               <a href="#">+25 more</a>
             </li>
           </ul>
@@ -44,15 +45,9 @@
       </div>
 
 
-
       <div class="item">
-        <h2>What we do</h2>
-        <p>{{charity.data.impactStatementWhat}}</p>
-      </div>
-
-      <div class="item">     
-        <h2>Why we do it</h2>
-        <p>{{charity.data.impactStatementWhy}}</p>
+        <h2>About Us</h2>
+        <p class="content-paragraph">{{charity.data.description}}</p>
       </div>
 
 
