@@ -94,6 +94,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.charity.thanks', {
+    url: '/thanks',
+    views: {
+      'page-charities': {
+        templateUrl: 'templates/charity-thanks.html',
+        controller: 'ThanksCtrl',
+        resolve: {
+          donation: function($http) {
+            return $http.get('http://battlehack2015.azurewebsites.net:80/v1/customers/'+ localStorage.custKey +'/donations')
+              .success(function(donations) {
+                return donations;
+              })
+          }
+        }
+      }
+    }
+  })
+
   .state('tab.charities', {
       url: '/charities',
       views: {
