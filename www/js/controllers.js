@@ -31,7 +31,7 @@ angular.module('starter.controllers', [])
   }
 
   var sdkOptions = {
-      useLocalStorage:true
+      //useLocalStorage:true
   };
 
   var beaconWatchOptions = {
