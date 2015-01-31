@@ -114,11 +114,9 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
+.controller('charitiesCtrl', function($scope, charities) {
+  $scope.charities = charities.data;
+
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
@@ -137,6 +135,8 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+
+
 
   $scope.accountSubmit = function() {
       var params = {
