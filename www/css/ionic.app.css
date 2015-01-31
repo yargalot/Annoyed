@@ -7057,6 +7057,40 @@ a.button {
     margin-bottom: 0;
     line-height: 130%; }
 
+.block-holder {
+  display: table; }
+  .block-holder > .block {
+    display: table-cell;
+    width: 1%;
+    font-size: 20px;
+    text-align: center;
+    border: solid 1px #ddd;
+    border-left: 0;
+    padding: 10px 5px;
+    border-bottom: 0; }
+    .block-holder > .block:first-child {
+      border-left: solid 1px #ccc; }
+    .block-holder > .block small {
+      font-size: 14px;
+      display: block; }
+
+.dashboard-profile {
+  margin-bottom: 30px; }
+  .dashboard-profile img {
+    max-width: 100%; }
+  .dashboard-profile .dashboard-profile-overview {
+    margin-top: -50px;
+    text-align: center;
+    font-size: 20px; }
+    .dashboard-profile .dashboard-profile-overview .dashboard-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      overflow: hidden;
+      margin: 0 auto; }
+    .dashboard-profile .dashboard-profile-overview img {
+      width: 100px; }
+
 .item .content-paragraph {
   white-space: normal; }
 

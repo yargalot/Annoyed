@@ -96,9 +96,57 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 
+.block-holder {
+  display:table;
 
+  > .block {
+    display:table-cell;
+    width:1%;
+    font-size:20px;
+    text-align:center;
 
+    border:solid 1px #ddd;
+    border-left:0;
+    padding:10px 5px;
+    border-bottom:0;
 
+    &:first-child {
+      border-left:solid 1px #ccc;
+    }
+
+    small {
+      font-size:14px;
+      display:block;
+    }
+  }
+}
+
+.dashboard-profile {
+  margin-bottom:30px;
+
+  img {
+    max-width:100%;
+
+  }
+
+  .dashboard-profile-overview {
+    margin-top:-50px;
+    text-align:center;
+    font-size:20px;
+
+    .dashboard-avatar {
+      width:100px;
+      height:100px;
+      border-radius:50px;
+      overflow:hidden;
+      margin:0 auto;
+    }
+
+    img {
+      width:100px;
+    }
+  }
+}
 
 .item {
   .content-paragraph {

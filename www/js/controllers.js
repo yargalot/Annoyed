@@ -6,11 +6,16 @@ angular.module('starter.controllers', [])
     $http.get('http://battlehack2015.azurewebsites.net:80/v1/customers/'+ localStorage.customerKey +'/donations')
       .success(function(data) {
         $scope.transactions = data;
+
+        $scope.transactionsTotal = 0;
+
+        angular.forEach($scope.transactions, function(transaction) {
+          $scope.transactionsTotal += transaction.Amount;
+        })
+
       });
 
   }
-
-
 
   $scope.beacons = [];
 

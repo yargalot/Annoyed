@@ -1,12 +1,26 @@
 <ion-view view-title="LoveCharity">
-  <ion-content class="padding">
+  <ion-content class="">
     <!--     <div>
       {{watchData}}
     </div>
     <div>
       {{description}}
     </div> -->
+
+
     <h2 ng-if="!beacons">Searching for charities</h2>
+
+    <div class="dashboard-profile">
+      <img src="/img/cover-curecancer.jpg" alt="">
+
+      <div class="dashboard-profile-overview">
+        <div class="dashboard-avatar">
+          <img src="http://lorempixel.com/120/120/people/9/">
+        </div>
+        Katie Kate
+      </div>
+
+    </div>
 
     <div class="item item-divider" ng-if="beacons.length">
       Charities around me
@@ -22,16 +36,28 @@
       </ion-item>
     </ion-list>
 
-    <div class="item item-divider">
-      My Transactions
-    </div>
-
-    <div class="list card" ng-repeat="transaction in transactions">
-      <div class="item item-divider">{{transaction.CharityName}}</div>
-      <div class="item item-body">
-        <p>You donated {{transaction.Amount}}</p>
+    <div class="block-holder">
+      <div class="block">
+        {{transactions.length}}
+        <small>Transactions</small>
+      </div>
+      <div class="block">
+        20
+        <small>Charities</small>
+      </div>
+      <div class="block">
+        ${{transactionsTotal}}
+        <small>Dontated</small>
       </div>
     </div>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="transaction in transactions">
+        <img src="/img/ionic.png" alt="">
+        <h2>{{transaction.CharityName}}</h2>
+        <p>You donated {{transaction.Amount}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
 
   </ion-content>
 </ion-view>

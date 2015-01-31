@@ -10,14 +10,14 @@
     </div>
 
     <div class="padding donation-thankyou-text align-center">
-      <p style="text-align:center;">You have successfully donated <strong>{{donation.amount}}</strong> to <strong>{{donation.charity}}</strong></p>
+      <p style="text-align:center;">You have successfully donated <strong>{{donation.Amount}}</strong> to <strong>{{donation.CharityName}}</strong></p>
     </div>
 
     <div class="padding donation-next">
-      <button class="button button-outline button-block button-assertive">
+      <button class="button button-outline button-block button-assertive" ui-sref="tab.dash">
         My Donation History
       </button>
-      <button class="button button-block button-assertive">
+      <button class="button button-block button-assertive" ui-sref="tab.charity({id: donation.CharityId})">
         Back to Charity
       </button>
     </div>
