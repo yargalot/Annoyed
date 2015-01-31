@@ -260,7 +260,7 @@ angular.module('starter.controllers', [])
       $http.post('http://battlehack2015.azurewebsites.net/v1/Payment/CheckOut', params)
         .success(function(response) {
 
-          if (cordova) {
+          if ('undefined' !== typeof cordova) {
             cordova.plugins.Keyboard.close();
           }
           $state.go('tab.thanks', {id: charityId});
