@@ -152,7 +152,7 @@ angular.module('starter.controllers', [])
 // Donation Thankyou Controller
 .controller('DonationThankyouCtrl', function($scope) {
 
-});
+})
 
 
 // Donor Edit Profile Controller
