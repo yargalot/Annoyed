@@ -2210,7 +2210,7 @@ body, .ionic-body {
   color: #000;
   word-wrap: break-word;
   font-size: 14px;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
   line-height: 20px;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
@@ -2525,7 +2525,7 @@ cite {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000;
   font-weight: 500;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
   line-height: 1.2; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
     font-weight: normal;
@@ -3804,7 +3804,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
   white-space: nowrap;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
   opacity: 0.7; }
   .tab-item:hover {
     cursor: pointer; }
@@ -5146,7 +5146,7 @@ label, input, button, select, textarea {
   line-height: 1.42857; }
 
 input, button, select, textarea {
-  font-family: "Helvetica Neue", "Roboto", sans-serif; }
+  font-family: "Roboto", "Helvetica Neue", sans-serif; }
 
 .item-input {
   display: -webkit-box;
@@ -7017,14 +7017,30 @@ a.button {
 
 .name-header .name-header-left {
   float: left; }
+.name-header .name-header-right {
+  padding-left: 120px; }
+  .name-header .name-header-right h2 {
+    font-size: 16px; }
+  .name-header .name-header-right p {
+    font-size: 13px;
+    color: #666; }
+
+.item .content-paragraph {
+  white-space: normal; }
 
 .horizontal-list ul {
   display: inline-block; }
   .horizontal-list ul li {
     display: inline-block; }
 
-.contributor-lists ul li {
-  margin-right: 6px; }
-  .contributor-lists ul li img {
-    max-width: 40px;
-    border-radius: 50%; }
+.contributor-lists ul {
+  margin-top: 6px; }
+  .contributor-lists ul li {
+    margin-right: 6px; }
+    .contributor-lists ul li img {
+      max-width: 40px;
+      border-radius: 50%; }
+    .contributor-lists ul li.morelink a {
+      display: inline-block;
+      padding-bottom: 6px;
+      color: black; }
