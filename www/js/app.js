@@ -81,7 +81,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'page-charities': {
         templateUrl: 'templates/charity-donate.html',
-        controller: 'DonateCtrl',
+        controller: 'DonationCtrl',
+        resolve: {
+          braintreeKey: function($http) {
+            return $http.get('http://battlehack2015.azurewebsites.net/v1/Payment/ClientToken?customerId=' + localStorage.custKey)
+              .success(function(key) {
+                return key;
+              })
+          }
+        }
       }
     }
   })
