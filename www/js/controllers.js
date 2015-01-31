@@ -107,15 +107,33 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('CharityCtrl', function($scope, charity) {
+.controller('CharityCtrl', function($scope, $http, charity) {
   var url = 'http://battlehack2015.azurewebsites.net/v1/charities/248209';
 
   $scope.charity = charity;
 
 })
 
-.controller('charitiesCtrl', function($scope, charities) {
+.controller('charitiesCtrl', function($scope, $http, charities) {
   $scope.charities = charities.data;
+
+  $scope.searchTerms = '';
+
+  $scope.charitySearch = function() {
+
+      if (!this.searchTerms) {
+        $scope.charities = charities.data;
+        return
+      }
+
+
+      $http.get('http://battlehack2015.azurewebsites.net:80/v1/charities/search?name=' + this.searchTerms)
+        .success(function(response) {
+          console.log(response)
+
+          $scope.charities = response;
+        });
+  };
 
 })
 
