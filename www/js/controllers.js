@@ -207,11 +207,13 @@ angular.module('starter.controllers', [])
 
 // Donation Controller
 // Will implement Payments Service
-.controller('DonationCtrl', function($scope, $state, $stateParams, $http, braintreeKey) {
+.controller('DonationCtrl', function($scope, $state, $stateParams, $http, braintreeKey, charity) {
 
   console.log(braintreeKey);
   var key = braintreeKey.data;
   var charityId = $stateParams.id;
+
+  $scope.charity = charity;
 
   $scope.formValues = {
     donationAmount: 0

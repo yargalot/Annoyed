@@ -137,3 +137,95 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 
+
+
+// Donation Screen
+.donation-title {
+  h2 {
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+
+.donation-connection {
+
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 100px;
+  position: relative;
+
+  .donor-avatar,
+  .charity-avatar {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    box-shadow: 0 0 8px rgba(0,0,0, 0.14);
+    position: absolute;
+    z-index: 6;
+
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+
+  .donor-avatar {
+    border-radius: 50%;
+    left: 0;
+    padding: 2px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .charity-avatar {
+    right: 0;
+    padding: 6px;
+
+    border-radius: 10px;
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .love-charities-divider {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: $stable;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -21px;
+    z-index: 4;
+    padding: 8px 6px;
+    img {
+      z-index: 5;
+      width: 30px;
+      height: 30px;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      background-color: $stable;
+      height: 6px;
+      width: 100px;
+      top: 17px;
+      position: absolute;
+      z-index: 3;
+    }
+    &:before {
+      left:40px;
+    }
+    &:after {
+      right:40px;
+    }
+  }
+}
+

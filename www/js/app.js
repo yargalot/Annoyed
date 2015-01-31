@@ -78,6 +78,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
               .success(function(key) {
                 return key;
               })
+          },
+          charity: function($stateParams, $http) {
+            return $http.get('http://battlehack2015.azurewebsites.net/v1/charities/' + $stateParams.id)
+            .success(function(data) {
+              return data;
+            })
           }
         }
       }

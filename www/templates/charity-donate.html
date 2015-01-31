@@ -1,35 +1,47 @@
-<ion-view view-title="Charity">
+<ion-view view-title="Make a Donation">
   <ion-content>
-    <h2 class="light">Your donation will help a cause</h2>
+    
+    <div class="padding donation-title">
+      <h2 class="font-light centered">Your donation will help this cause</h2>
+    </div>
 
+    <!-- BEGIN // Artistic Avatars -->
     <div class="donation-connection">
       <div class="donor-avatar">
-        <img src="avatar">
+        <img src="http://lorempixel.com/120/120/people/9/">
+      </div>
+      <div class="love-charities-divider"><img src="img/logo-w.svg"></div>
+      <div class="charity-avatar">
+        <img ng-src="{{charity.data.logoAbsoluteUrl}}">
       </div>
     </div>
 
+
+    <!-- BEGIN // Donation Amount -->
     <label class="item item-input">
       <span class="input-label">Donation Amount</span>
       <input type="text" ng-model="formValues.donationAmount" name="donationAmount" id="donationAmount">
     </label>
 
-    <a class="item item-icon-left" href="select/frequency/">
+
+    <!-- BEGIN // Donation Frequency 
+    <a class="item" href="select/frequency/">
       Frequency
       <span class="item-note">
         One off
       </span>
     </a>
+    -->
 
-    <div class="padding">
-      <form>
-        
-        <div id="dropin"></div>
-
+    <!-- BEGIN // Braintree Payment Module -->
+    <form>        
+      <div id="dropin"></div>
+      <div class="padding">
         <button type="submit" class="button button-block button-assertive">
           Donate Now
         </button>
-      </form>
-    </div>
-
+      </div>
+    </form>
+    
   </ion-content>
 </ion-view>
