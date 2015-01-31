@@ -1,21 +1,35 @@
 <ion-view view-title="Charity">
-  <ion-content class="padding">
-    <h1>Your donation will help a cause</h1>
+  <ion-content>
+    <h2 class="light">Your donation will help a cause</h2>
 
-    <p>Here is some donation stuff</p>
+    <div class="donation-connection">
+      <div class="donor-avatar">
+        <img src="avatar">
+      </div>
+    </div>
+
     <label class="item item-input">
       <span class="input-label">Donation Amount</span>
       <input type="text" ng-model="formValues.donationAmount" name="donationAmount" id="donationAmount">
     </label>
 
-    <form>
-      <div id="dropin"></div>
+    <a class="item item-icon-left" href="select/frequency/">
+      Frequency
+      <span class="item-note">
+        One off
+      </span>
+    </a>
 
-      <button type="submit" class="button button-block">
-        Donate Now!
-      </button>
-    </form>
+    <div class="padding">
+      <form>
+        
+        <div id="dropin"></div>
 
+        <button type="submit" class="button button-block button-assertive">
+          Donate Now
+        </button>
+      </form>
+    </div>
 
   </ion-content>
 </ion-view>
