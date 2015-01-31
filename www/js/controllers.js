@@ -133,8 +133,19 @@ angular.module('starter.controllers', [])
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, $http) {
   $scope.settings = {
     enableFriends: true
   };
+
+  $scope.accountSubmit = function() {
+      var params = this.accountCreation;
+
+      $http.post('http://battlehack2015.azurewebsites.net//v1/customers', params)
+        .success(function(response) {
+          console.log('test')
+        });
+
+  };
+
 });
