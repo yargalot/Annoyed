@@ -4,7 +4,9 @@
       <h2 class="title" ng-show="userLoggedIn">Your Profile</h2>
     </ion-header-bar>
   <ion-content>
+
     <ng-form ng-hide="userLoggedIn" name="accountCreation">
+
       <ion-list>
         <label class="item item-input">
           <span class="input-label">First Name</span>
@@ -34,10 +36,13 @@
           <span class="input-label">Website</span>
           <input type="text" ng-model="website"  name="website" id="website">
         </label>
-        <button type="submit" ng-click="accountSubmit()" class="button button-block button-positive">
-          Submit
-        </button>
+
       </ion-list>
+      <div class="padding">
+        <button type="submit" ng-click="accountSubmit()" class="button button-block button-assertive">
+          Save
+        </button>
+      </div>
     </ng-form>
 
     <button ng-show="userLoggedIn" ng-click="logout()" class="button button-block button-positive">
