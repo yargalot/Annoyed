@@ -239,6 +239,7 @@ angular.module('starter.controllers', [])
   var charityId = $stateParams.id;
 
   $scope.charity = charity;
+  $scope.submitDisabled = false;
 
   $scope.formValues = {
     donationAmount: 0
@@ -256,6 +257,8 @@ angular.module('starter.controllers', [])
       });
 
     $scope.donationStart = function(nonce) {
+
+      $scope.submitDisabled = true;
 
       var params = {
         "Frequency": "none",
