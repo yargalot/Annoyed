@@ -1,7 +1,86 @@
 <ion-view view-title="Charity">
-  <ion-content class="padding">
-    <h1>Charity</h1>
+  <ion-content class="charity-content">
 
-    {{charity}}
+    <!-- BEGIN // Background section-->
+    <div class="background-header">
+
+    </div>
+
+
+    <!-- BEGIN // Name Header-->
+    <div class="name-header padding">
+      <div class="name-header-left">
+        <img width="100px" class="logo charity-logo" ng-src="{{charity.data.logoAbsoluteUrl}}">
+      </div>
+      <div class="name-header-right">
+        <h2>{{charity.data.name}} <span class="verified-tag"></span></h2>
+        <p>{{charity.data.description}}</p>
+      </div>
+    </div>
+
+    <!-- BEGIN // Donate-->
+    <div class="padding">
+      <button class="button button-block button-assertive">
+        Donate
+      </button>
+    </div>
+
+
+    <!-- BEGIN // Contributors-->
+    <div class="list">
+      
+      <div class="item">
+        <h2>Contributors</h2>
+        <div class="horizontal-list">
+          <ul>
+            <li ng-repeat="contributor in contributors">
+              <img class="round" ng-src="{{contributor.image}}">
+            </li>
+            <li>
+              <a href="#">+25 more</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div class="item">
+        <h2>What we do</h2>
+        <p>{{charity.data.impactStatementWhat}}</p>
+      </div>
+
+      <div class="item">     
+        <h2>Why we do it</h2>
+        <p>{{charity.data.impactStatementWhy}}</p>
+      </div>
+
+
+      <a class="item" ng-href="{{charity.data.websiteUrl}}" target="_blank">
+        Visit Website
+      </a>
+
+
+      <div class="item">
+        Registration Number
+        <span class="item-note">
+          {{charity.data.registrationNumber}}
+        </span>
+      </div>
+
+
+    </div>
+
+
+
+    <!--  // Contributors-->
+
+
+
+
+
+    
+
+    
   </ion-content>
 </ion-view>

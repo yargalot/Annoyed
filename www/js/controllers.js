@@ -109,8 +109,33 @@ angular.module('starter.controllers', [])
 
 .controller('CharityCtrl', function($scope, charity) {
   var url = 'http://battlehack2015.azurewebsites.net/v1/charities/248209';
+  var placeimagepath = 'http://lorempixel.com/75/75/people/';
 
   $scope.charity = charity;
+  console.log(charity.data);
+
+
+
+  $scope.contributors = [
+    {
+      image: placeimagepath + 1
+    },
+    {
+      image: placeimagepath + 2
+    },
+    {
+      image: placeimagepath + 3
+    },
+    {
+      image: placeimagepath + 4
+    },
+    {
+      image: placeimagepath + 5
+    },
+    {
+      image: placeimagepath + 6
+    }
+  ];
 
 })
 
