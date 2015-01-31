@@ -262,7 +262,7 @@ angular.module('starter.controllers', [])
   $scope.submitDisabled = false;
 
   $scope.formValues = {
-    donationAmount: 0
+    donationAmount: 20
   };
 
   braintree.setup( key, "dropin", {

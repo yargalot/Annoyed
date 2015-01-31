@@ -7133,7 +7133,7 @@ a.button {
     width: 70px;
     height: 70px;
     background-color: #fff;
-    display: table-cell;
+    display: table-cell !important;
     vertical-align: middle;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
     position: absolute;
@@ -7152,7 +7152,7 @@ a.button {
     padding: 6px;
     border-radius: 10px; }
     .donation-connection .charity-avatar img {
-      border-radius: 10px; }
+      border-radius: 0px; }
   .donation-connection .love-charities-divider {
     width: 42px;
     height: 42px;
@@ -7216,3 +7216,24 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
+.item.dave-input {
+  height: 120px; }
+  .item.dave-input label {
+    text-align: center;
+    display: block; }
+  .item.dave-input .dave-sexy-input {
+    display: inline-block !important;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 1px solid black !important;
+    width: 180px;
+    border-radius: 0;
+    text-align: center;
+    font-size: 45px !important;
+    line-height: 45px !important;
+    height: 66px !important;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px; }
