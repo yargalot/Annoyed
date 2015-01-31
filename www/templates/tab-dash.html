@@ -27,11 +27,9 @@
     </div>
 
     <div class="list card" ng-repeat="transaction in transactions">
-      <div class="item item-divider">{{transaction.CharityId}}</div>
+      <div class="item item-divider">{{transaction.CharityName}}</div>
       <div class="item item-body">
-        <p>
-          {{transaction.Amount}}
-        </p>
+        <p>You donated {{transaction.Amount}}</p>
       </div>
     </div>
 
