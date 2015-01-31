@@ -105,6 +105,7 @@ angular.module('starter.controllers', [])
       console.log('Error occurred watching beacons');
   }
 
+
 })
 
 .controller('CharityCtrl', function($scope, $http, charity) {
@@ -141,7 +142,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('charitiesCtrl', function($scope, $http, charities) {
+.controller('charitiesCtrl', function($scope, $http, $stateParams, charities) {
   $scope.charities = charities.data;
 
   $scope.searchTerms = '';
@@ -234,7 +235,7 @@ angular.module('starter.controllers', [])
         "Frequency": "none",
         "PaymentMethodNonce": nonce,
         "Amount": $scope.formValues.donationAmount,
-        "CustomerId": localStorage.custKey,
+        "CustomerId": localStorage.customerKey,
         "CharityId": charityId
       }
 
@@ -242,7 +243,8 @@ angular.module('starter.controllers', [])
         .success(function(response) {
 
           console.log('DONATION DONE');
-          $state.go('tab.charity.thanks');
+          cordova.plugins.Keyboard.close();
+          $state.go('tab.thanks', {id: charityId});
         })
 
 
