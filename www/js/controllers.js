@@ -1,6 +1,16 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, $timeout, $state) {
+.controller('DashCtrl', function($scope, $timeout, $state, $http) {
+
+  if (localStorage.customerKey) {
+    $http.get('http://battlehack2015.azurewebsites.net:80/v1/customers/'+ localStorage.customerKey +'/donations')
+      .success(function(data) {
+        $scope.transactions = data;
+      });
+
+  }
+
+
 
   $scope.beacons = [];
 
@@ -108,12 +118,22 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('CharityCtrl', function($scope, $http, charity) {
+.controller('CharityCtrl', function($scope, $http, $stateParams, $state, charity) {
   var url = 'http://battlehack2015.azurewebsites.net/v1/charities/248209';
   var placeimagepath = 'http://lorempixel.com/75/75/people/';
 
   $scope.charity = charity;
 
+  $scope.userLoggedIn = localStorage.customerKey;
+
+  $scope.goToCharities = function() {
+    $state.go('tab.charities')
+  }
+
+  $http.get('http://battlehack2015.azurewebsites.net:80/v1/charities/'+  $stateParams.id +'/donations/stats')
+    .success(function(donaters) {
+      $scope.donaters = donaters;
+    });
 
   $scope.contributors = [
     {
@@ -164,24 +184,12 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('FriendsCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
-})
-
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
-})
-
-.controller('AccountCtrl', function($scope, $http) {
+.controller('AccountCtrl', function($scope, $http, $state) {
   $scope.settings = {
     enableFriends: true
   };
 
-
+  $scope.userLoggedIn = localStorage.customerKey;
 
   $scope.accountSubmit = function() {
       var params = {
@@ -196,8 +204,17 @@ angular.module('starter.controllers', [])
       $http.post('http://battlehack2015.azurewebsites.net/v1/customers', params)
         .success(function(customerKey) {
           localStorage.setItem('customerKey', customerKey);
+          $scope.userLoggedIn = localStorage.customerKey;
+          $state.go('tab.dash');
+
         });
 
+  };
+
+  $scope.logout = function() {
+    localStorage.removeItem('customerKey');
+    $scope.userLoggedIn = localStorage.customerKey;
+    $state.go('tab.dash');
   };
 
 })
@@ -243,8 +260,9 @@ angular.module('starter.controllers', [])
       $http.post('http://battlehack2015.azurewebsites.net/v1/Payment/CheckOut', params)
         .success(function(response) {
 
-          console.log('DONATION DONE');
-          cordova.plugins.Keyboard.close();
+          if (cordova) {
+            cordova.plugins.Keyboard.close();
+          }
           $state.go('tab.thanks', {id: charityId});
         })
 

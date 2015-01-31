@@ -1,4 +1,11 @@
 <ion-view view-title="Charity">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-buttons side="left">
+      <button class="button back-button buttons  button-clear header-item" ng-click="goToCharities()">
+        <i class="ion-chevron-left"></i> Back
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
   <ion-content class="charity-content">
 
     <!-- BEGIN // Background section-->
@@ -22,8 +29,12 @@
 
     <!-- BEGIN // Donate-->
     <div class="padding">
-      <button class="button button-block button-assertive" ui-sref="tab.dontate({id: charity.data.charityId})">
+      <button class="button button-block button-assertive" ng-show="userLoggedIn" ui-sref="tab.dontate({id: charity.data.charityId})">
         DONATE
+      </button>
+
+      <button type="submit" class="button button-block button-assertive" ui-sref="tab.account" ng-hide="userLoggedIn">
+        Login to Donate
       </button>
     </div>
 
@@ -39,7 +50,8 @@
               <img class="round" ng-src="{{contributor.image}}">
             </li>
             <li class="morelink">
-              <a href="#">+25 more</a>
+              <a>${{donaters.TotalDonation}} given so far</a><br>
+              <a href="#">{{donaters.TotalDonator}} donors</a>
             </li>
           </ul>
         </div>
