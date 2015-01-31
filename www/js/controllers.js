@@ -112,7 +112,7 @@ angular.module('starter.controllers', [])
   var placeimagepath = 'http://lorempixel.com/75/75/people/';
 
   $scope.charity = charity;
-  console.log(charity.data);
+  
 
 
 
@@ -130,6 +130,14 @@ angular.module('starter.controllers', [])
       image: placeimagepath + 4
     }
   ];
+
+  // Assign a cover image
+  if (charity.data.name == 'Cure Cancer Australia Foundation') {
+    $scope.coverImage = 'img/cover-curecancer.jpg';
+  } else {
+    $scope.coverImage = 'img/cover-childfund.jpg';
+  }
+
 
 })
 

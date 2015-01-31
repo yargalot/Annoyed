@@ -3,15 +3,16 @@
 
     <!-- BEGIN // Background section-->
     <div class="background-header">
-      <img src="">
-
+      <img class="img-responsive" ng-src="{{coverImage}}">
     </div>
 
 
     <!-- BEGIN // Name Header-->
     <div class="name-header padding">
       <div class="name-header-left">
-        <img width="100px" class="logo charity-logo" ng-src="{{charity.data.logoAbsoluteUrl}}">
+        <div class="img-container">
+          <img class="logo charity-logo" ng-src="{{charity.data.logoAbsoluteUrl}}">
+        </div>
       </div>
       <div class="name-header-right">
         <h2>{{charity.data.name}} <span class="verified-tag"></span></h2>
