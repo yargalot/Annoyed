@@ -66,6 +66,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.donate', {
+    url: '/donate',
+    views: {
+      'tab-charities': {
+        templateUrl: 'templates/charity-donate.html',
+        controller: 'DonateCtrl',
+      }
+    }
+  })
+
   .state('tab.charities', {
       url: '/charities',
       views: {
