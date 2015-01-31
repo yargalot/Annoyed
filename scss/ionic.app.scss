@@ -122,7 +122,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 .dashboard-profile {
-  margin-bottom:30px;
+  margin-bottom:20px;
 
   img {
     max-width:100%;
@@ -133,16 +133,18 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     margin-top:-75px;
     text-align:center;
     font-size:20px;
+    font-weight:bold;
 
     .dashboard-avatar {
       width:100px;
       height:100px;
       border-radius:50px;
       overflow:hidden;
-      margin:0 auto;
+      margin:0 auto 10px;
     }
 
     img {
+      display:block;
       width:100px;
     }
   }
