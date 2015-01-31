@@ -1,6 +1,6 @@
 <ion-view view-title="Make a Donation">
   <ion-content>
-    
+
     <div class="padding donation-title">
       <h2 class="font-light centered">Your donation will help this charity</h2>
     </div>
@@ -23,7 +23,7 @@
       <input type="text" ng-model="formValues.donationAmount" name="donationAmount" id="donationAmount">
     </label>
 
-    <!-- BEGIN // Donation Frequency 
+    <!-- BEGIN // Donation Frequency
     <a class="item" href="select/frequency/">
       Frequency
       <span class="item-note">
@@ -33,14 +33,14 @@
     -->
 
     <!-- BEGIN // Braintree Payment Module -->
-    <form>        
+    <form>
       <div id="dropin"></div>
       <div class="padding">
-        <button type="submit" class="button button-block button-assertive">
+        <button type="submit" class="button button-block button-assertive" ng-disabled="submitDisabled">
           Donate Now
         </button>
       </div>
     </form>
-    
+
   </ion-content>
 </ion-view>

@@ -7072,7 +7072,8 @@ a.button {
       border-left: solid 1px #ccc; }
     .block-holder > .block small {
       font-size: 14px;
-      display: block; }
+      display: block;
+      color: #999; }
 
 .dashboard-profile {
   margin-bottom: 20px; }
@@ -7187,3 +7188,9 @@ a.button {
 
 .align-center {
   text-align: center; }
+
+.tabs-icon-top > .tabs .tab-item {
+  line-height: 45px !important; }
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active {
+  color: #333; }
