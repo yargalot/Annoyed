@@ -144,6 +144,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   h2 {
     font-weight: 300;
     text-align: center;
+    & {
+      .red: $stable;
+    }
   }
 }
 
@@ -229,3 +232,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   }
 }
 
+.lovecharities-logo {
+  text-align: center;
+}

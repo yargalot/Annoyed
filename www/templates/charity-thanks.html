@@ -1,6 +1,27 @@
 <ion-view view-title="Charity">
   <ion-content class="padding">
-    <h1>Thanks for donating!</h1>
+    
+    <div class="padding donation-title">
+      <h2 class="font-light centered red">Thanks for donating!</h2>
+    </div>
+
+    <div class="padding lovecharities-logo">
+      <img align="center" src="img/logo.svg" width="200">
+    </div>
+
+    <div class="padding donation-thankyou-text">
+      <p>You have successfully donated <strong>{{donation.amount}}</strong> to <strong>{{donation.charity}}</strong></p>
+    </div>
+
+    <div class="padding donation-next">
+      <button class="button button-outline button-block button-assertive">
+        My Donation History
+      </button>
+      <button class="button button-block button-assertive">
+        Back to Charity
+      </button>
+    </div>
+
 
     {{donation}}
 
