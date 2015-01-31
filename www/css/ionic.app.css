@@ -7015,15 +7015,47 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.background-header .img-responsive {
+  max-width: 100%; }
+
 .name-header .name-header-left {
-  float: left; }
+  float: left;
+  margin-top: -50px; }
+  .name-header .name-header-left .img-container {
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    border: 6px solid white;
+    border-radius: 8px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.14); }
+    .name-header .name-header-left .img-container img {
+      max-width: 90%; }
 .name-header .name-header-right {
   padding-left: 120px; }
   .name-header .name-header-right h2 {
     font-size: 16px; }
+    .name-header .name-header-right h2 span.verified-tag:before {
+      content: '\f122';
+      width: 15px;
+      height: 15px;
+      padding-top: 1px;
+      border-radius: 50%;
+      background-color: #88C9F9;
+      color: #fff;
+      display: inline-block;
+      font-family: "Ionicons";
+      font-size: 10px;
+      text-align: center; }
   .name-header .name-header-right p {
-    font-size: 13px;
-    color: #666; }
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 130%; }
 
 .item .content-paragraph {
   white-space: normal; }

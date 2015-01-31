@@ -30,9 +30,33 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 // Other Styles for specific parts of the app
+
+.background-header {
+  .img-responsive {
+    max-width: 100%;
+  }
+}
+
 .name-header {
   .name-header-left {
-    float: left
+    float: left;
+    margin-top: -50px;
+    .img-container {
+      display: table-cell;
+      width: 100px;
+      height: 100px;
+      border: 6px solid white;
+      border-radius: 8px;
+      vertical-align: middle;
+      text-align: center;
+      background-color: white;
+      position: relative;
+      z-index: 10;
+      box-shadow: 0 0 12px rgba(0,0,0,0.14);
+      img {
+        max-width: 90%;
+      }
+    }
   }
 
   .name-header-right {
@@ -40,10 +64,28 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
     h2 {
       font-size: 16px;
+
+      span.verified-tag {
+        &:before {
+          content: '\f122';
+          width: 15px;
+          height: 15px;
+          padding-top: 1px;
+          border-radius: 50%;
+          background-color: #88C9F9;
+          color: #fff;
+          display: inline-block;
+          font-family: "Ionicons";
+          font-size: 10px;
+          text-align: center;
+        }
+      }
     }
     p {
-      font-size: 13px;
+      font-size: 12px;
       color: #666;
+      margin-bottom: 0;
+      line-height: 130%;
     }
   }
 }
