@@ -15,6 +15,8 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "https://github.com/driftyco/ionic-plugins-keyboard.git"
+    "https://github.com/driftyco/ionic-plugins-keyboard.git",
+    "https://github.com/katzer/cordova-plugin-local-notifications.git",
+    "de.appplant.cordova.plugin.local-notification@0.7.8"
   ]
 }
