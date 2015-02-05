@@ -1,0 +1,11 @@
+2015-01-31 18:55:48.605 mobile[17214:247829] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/stevenjohnmiller/Library/Developer/CoreSimulator/Devices/E7943D9F-4DFE-46A2-9F98-EF17581A89CD/data/Containers/Data/Application/E0975CD5-79B8-4ED9-92F6-C0E3D845018A/Library/Cookies/Cookies.binarycookies
+2015-01-31 18:55:48.994 mobile[17214:247829] Apache Cordova native platform version 3.7.0 is starting.
+2015-01-31 18:55:48.995 mobile[17214:247829] Multi-tasking -> Device: YES, App: YES
+2015-01-31 18:55:49.024 mobile[17214:247829] Unlimited access to network resources
+2015-01-31 18:55:49.759 mobile[17214:247829] [CDVTimer][keyboard] 0.066996ms
+2015-01-31 18:55:49.760 mobile[17214:247829] [CDVTimer][TotalPluginStartup] 0.253022ms
+2015-01-31 18:55:50.772 mobile[17214:247829] Resetting plugins due to page load.
+2015-01-31 18:55:51.418 mobile[17214:247829] Finished load of: file:///Users/stevenjohnmiller/Library/Developer/CoreSimulator/Devices/E7943D9F-4DFE-46A2-9F98-EF17581A89CD/data/Containers/Bundle/Application/E0B60725-856C-44AC-B28E-E252BB4A0B60/mobile.app/www/index.html#/tab/dash
+2015-01-31 18:55:51.719 mobile[17214:247829] THREAD WARNING: ['BlueCatsSDKCDVPlugin'] took '49.313965' ms. Plugin should use a background thread.
+2015-01-31 18:55:57.475 mobile[17214:247829] Spurring
+2015-01-31 18:55:57.475 mobile[17214:247829] Checking

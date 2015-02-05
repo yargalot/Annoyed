@@ -1,0 +1,52 @@
+<ion-view view-title="Account">
+    <ion-header-bar class="bar-subheader">
+      <h2 class="title" ng-hide="userLoggedIn">Make a profile</h2>
+      <h2 class="title" ng-show="userLoggedIn">Your Profile</h2>
+    </ion-header-bar>
+  <ion-content>
+
+    <ng-form ng-hide="userLoggedIn" name="accountCreation">
+
+      <ion-list>
+        <label class="item item-input">
+          <span class="input-label">First Name</span>
+          <input type="text" ng-model="firstName" name="fistName" id="firstName">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Last Name</span>
+          <input type="text" ng-model="lastName"  name="lastName" id="lastName">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Company</span>
+          <input type="text" ng-model="company"  name="company" id="company">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="text" ng-model="email"  name="email" id="email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Fax</span>
+          <input type="text" ng-model="fax"  name="fax" id="fax">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Phone</span>
+          <input type="text" ng-model="phone"  name="phone" id="phone">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Website</span>
+          <input type="text" ng-model="website"  name="website" id="website">
+        </label>
+
+      </ion-list>
+      <div class="padding">
+        <button type="submit" ng-click="accountSubmit()" class="button button-block button-assertive">
+          Save
+        </button>
+      </div>
+    </ng-form>
+
+    <button ng-show="userLoggedIn" ng-click="logout()" class="button button-block button-positive">
+      Logout
+    </button>
+  </ion-content>
+</ion-view>

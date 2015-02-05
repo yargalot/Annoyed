@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C7748CD852944ACBEB3AC4F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58808884C55741A196BF1786 /* CoreData.framework */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		2FC1B3EDB76F4C98AC5F8FF0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A923BEADEE3343B2A42B78E8 /* CoreLocation.framework */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */; };
+		3088BBBD154F3926009F9C59 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBB7154F3926009F9C59 /* Default-Landscape@2x~ipad.png */; };
+		3088BBBE154F3926009F9C59 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBB8154F3926009F9C59 /* Default-Landscape~ipad.png */; };
+		3088BBBF154F3926009F9C59 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBB9154F3926009F9C59 /* Default-Portrait@2x~ipad.png */; };
+		3088BBC0154F3926009F9C59 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBBA154F3926009F9C59 /* Default-Portrait~ipad.png */; };
+		3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBBB154F3926009F9C59 /* Default@2x~iphone.png */; };
+		3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBBC154F3926009F9C59 /* Default~iphone.png */; };
+		308D05371370CCF300D202BF /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D052E1370CCF300D202BF /* icon-72.png */; };
+		308D05381370CCF300D202BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D052F1370CCF300D202BF /* icon.png */; };
+		308D05391370CCF300D202BF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D05301370CCF300D202BF /* icon@2x.png */; };
+		30B4F30019D5E07200D9F7D8 /* Default-667h.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B4F2FD19D5E07200D9F7D8 /* Default-667h.png */; };
+		30B4F30119D5E07200D9F7D8 /* Default-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B4F2FE19D5E07200D9F7D8 /* Default-736h.png */; };
+		30B4F30219D5E07200D9F7D8 /* Default-Landscape-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B4F2FF19D5E07200D9F7D8 /* Default-Landscape-736h.png */; };
+		30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C1856519D5FC0A00212699 /* icon-60@3x.png */; };
+		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		3936C7FA6105402FB33F2C81 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB903FE066954970922FCED1 /* CFNetwork.framework */; };
+		3B0D7E3C2B2E4BA6B6F95D4C /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F97C518D81441A782CDF4B7 /* CDVDevice.m */; };
+		3F694F871A7D108900ADE4DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F694F861A7D108900ADE4DF /* Images.xcassets */; };
+		4699751805174F378432A820 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E092121AA2DE4FD78BC9ABC8 /* CoreBluetooth.framework */; };
+		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		65E4DC8A9B0C4C4F9C11382C /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F92B8121CAF4C3AB25F536F /* CDVLogger.m */; };
+		7ADC837CDEF24DD7A81D8271 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF60F63277A4C3D9ED6D8FF /* SystemConfiguration.framework */; };
+		7B5492EB8A4E4104A81A29DC /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 79794F8DBF5E402AA771D8E1 /* UIWebViewExtension.m */; };
+		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
+		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
+		7E7966E01810823500FA85AD /* icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D61810823500FA85AD /* icon-50.png */; };
+		7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D71810823500FA85AD /* icon-50@2x.png */; };
+		7E7966E21810823500FA85AD /* icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D81810823500FA85AD /* icon-60.png */; };
+		7E7966E31810823500FA85AD /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D91810823500FA85AD /* icon-60@2x.png */; };
+		7E7966E41810823500FA85AD /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DA1810823500FA85AD /* icon-76.png */; };
+		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
+		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
+		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
+		965E9575F1A84FC8B6B0FAB5 /* BCMicroLocation+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DE2CCC679B4C47A886EC97 /* BCMicroLocation+JSON.m */; };
+		96A2BA6C6AE9428BA1EB7719 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAC794D0AAE4CE0869ACA44 /* AdSupport.framework */; };
+		A211D64232F54C71BBA09291 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE84F97C6A41818D602291 /* libRestKit.a */; };
+		B0E5F261610F46EE811DA65A /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F90792C0208E4BAB8486143D /* IonicKeyboard.m */; };
+		B105F452C94348C7A1D1A7DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C8A2A809FA482C8F869C82 /* Foundation.framework */; };
+		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		E25E48C5BA7449F9870AA974 /* libBlueCatsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F85E1E88D6474289FA531E /* libBlueCatsSDK.a */; };
+		F1B7D53E5E434F2C96B72716 /* BlueCatsSDKCDVPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A2773E1833E9463099FC6937 /* BlueCatsSDKCDVPlugin.m */; };
+		F9A919AC0C514CD0B8A13212 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5AE1C978554F22B1EC14D5 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		020EF7BBEE68427FA72342CE /* RKMIMETypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMIMETypes.h; path = com.bluecats.beacons/RKMIMETypes.h; sourceTree = "<group>"; };
+		0579318D2BDE4EBC97982995 /* RKMappingErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMappingErrors.h; path = com.bluecats.beacons/RKMappingErrors.h; sourceTree = "<group>"; };
+		059C369B4158486EB553DCE4 /* RKRelationshipMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRelationshipMapping.h; path = com.bluecats.beacons/RKRelationshipMapping.h; sourceTree = "<group>"; };
+		0710BA5CA07E449B849A46B3 /* RKMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMapping.h; path = com.bluecats.beacons/RKMapping.h; sourceTree = "<group>"; };
+		0928087E3514400986CC0DEB /* BCLocalNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCLocalNotificationManager.h; path = com.bluecats.beacons/BCLocalNotificationManager.h; sourceTree = "<group>"; };
+		0B3CBFD484C04FD0B61A814C /* RKISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKISO8601DateFormatter.h; path = com.bluecats.beacons/RKISO8601DateFormatter.h; sourceTree = "<group>"; };
+		0C2FC09426BE458DAA15BEDB /* RKObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectManager.h; path = com.bluecats.beacons/RKObjectManager.h; sourceTree = "<group>"; };
+		0EE741AAE6DE43BEB272785D /* lcl_config_extensions_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lcl_config_extensions_RK.h; path = com.bluecats.beacons/lcl_config_extensions_RK.h; sourceTree = "<group>"; };
+		109365F8476147018F05E54A /* RKTestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTestFactory.h; path = com.bluecats.beacons/RKTestFactory.h; sourceTree = "<group>"; };
+		120975CC0FD44773981176C5 /* BCResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCResource.h; path = com.bluecats.beacons/BCResource.h; sourceTree = "<group>"; };
+		1B26605F0A3B4A76BBBAA735 /* RKSearchWordEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKSearchWordEntity.h; path = com.bluecats.beacons/RKSearchWordEntity.h; sourceTree = "<group>"; };
+		1B6470FABCC7433AA93AB45C /* BCApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCApp.h; path = com.bluecats.beacons/BCApp.h; sourceTree = "<group>"; };
+		1BFD4F695723455A9C70F8D7 /* NSManagedObjectContext+RKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+RKAdditions.h"; path = "com.bluecats.beacons/NSManagedObjectContext+RKAdditions.h"; sourceTree = "<group>"; };
+		1D0C494A064148E0AA4825E8 /* RKTestNotificationObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTestNotificationObserver.h; path = com.bluecats.beacons/RKTestNotificationObserver.h; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		216A2E5B083C4030BD7FA40C /* RKManagedObjectStore+RKSearchAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RKManagedObjectStore+RKSearchAdditions.h"; path = "com.bluecats.beacons/RKManagedObjectStore+RKSearchAdditions.h"; sourceTree = "<group>"; };
+		217BDA808F89448582D466AF /* BCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCCategory.h; path = com.bluecats.beacons/BCCategory.h; sourceTree = "<group>"; };
+		2319F5C327574695ADC2874E /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Network.h; path = com.bluecats.beacons/Network.h; sourceTree = "<group>"; };
+		23BFF5AA8AB64ED3A1420744 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = com.bluecats.beacons/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		2458D5ED8DB3497693ACAB94 /* lcl_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lcl_RK.h; path = com.bluecats.beacons/lcl_RK.h; sourceTree = "<group>"; };
+		26F90E5FF53C42C58D86B357 /* RKManagedObjectImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectImporter.h; path = com.bluecats.beacons/RKManagedObjectImporter.h; sourceTree = "<group>"; };
+		2868F5E7B8D54A419EFB7A0A /* RKObjectRequestOperationSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectRequestOperationSubclass.h; path = com.bluecats.beacons/RKObjectRequestOperationSubclass.h; sourceTree = "<group>"; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2943FFFF83D14B5FAF565E4D /* RKEntityMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKEntityMapping.h; path = com.bluecats.beacons/RKEntityMapping.h; sourceTree = "<group>"; };
+		29638E03EB994113B99EA752 /* RKValueTransformers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKValueTransformers.h; path = com.bluecats.beacons/RKValueTransformers.h; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A9D652A4FA94B2AA321DF92 /* RKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKLog.h; path = com.bluecats.beacons/RKLog.h; sourceTree = "<group>"; };
+		2B5CEC8FFDAB4B04AF0969C8 /* RKMappingOperationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMappingOperationDataSource.h; path = com.bluecats.beacons/RKMappingOperationDataSource.h; sourceTree = "<group>"; };
+		2E0A8C7C3DF34B8CB738F56C /* RKRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRouter.h; path = com.bluecats.beacons/RKRouter.h; sourceTree = "<group>"; };
+		2F02904848324612A7C5BD94 /* RKBenchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKBenchmark.h; path = com.bluecats.beacons/RKBenchmark.h; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3088BBB7154F3926009F9C59 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		3088BBB8154F3926009F9C59 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		3088BBB9154F3926009F9C59 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		3088BBBA154F3926009F9C59 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		3088BBBB154F3926009F9C59 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
+		3088BBBC154F3926009F9C59 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		308D052E1370CCF300D202BF /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		308D052F1370CCF300D202BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		308D05301370CCF300D202BF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		30B4F2FD19D5E07200D9F7D8 /* Default-667h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h.png"; sourceTree = "<group>"; };
+		30B4F2FE19D5E07200D9F7D8 /* Default-736h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h.png"; sourceTree = "<group>"; };
+		30B4F2FF19D5E07200D9F7D8 /* Default-Landscape-736h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape-736h.png"; sourceTree = "<group>"; };
+		30C1856519D5FC0A00212699 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
+		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		3276F068C18C4741B5527ECA /* BCEventFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCEventFilter.h; path = com.bluecats.beacons/BCEventFilter.h; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* mobile-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mobile-Prefix.pch"; sourceTree = "<group>"; };
+		33F21260F44940E99A90457C /* BCTriggeredEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCTriggeredEvent.h; path = com.bluecats.beacons/BCTriggeredEvent.h; sourceTree = "<group>"; };
+		357AAA572766463C8D20289D /* RKObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectMapping.h; path = com.bluecats.beacons/RKObjectMapping.h; sourceTree = "<group>"; };
+		388A30EC7E7A40BEA636F2E5 /* RKDotNetDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKDotNetDateFormatter.h; path = com.bluecats.beacons/RKDotNetDateFormatter.h; sourceTree = "<group>"; };
+		3911DCB0A0D9412FB5225521 /* RKTestFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTestFixture.h; path = com.bluecats.beacons/RKTestFixture.h; sourceTree = "<group>"; };
+		3918A00917C541AE82104CFB /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = com.bluecats.beacons/AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		3A1FEE7198FA47419B3A8974 /* SOCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOCKit.h; path = com.bluecats.beacons/SOCKit.h; sourceTree = "<group>"; };
+		3BE43B74182E49EA942C2A8F /* Support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Support.h; path = com.bluecats.beacons/Support.h; sourceTree = "<group>"; };
+		3F0C08925CF64958A8C61C38 /* RKObjectUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectUtilities.h; path = com.bluecats.beacons/RKObjectUtilities.h; sourceTree = "<group>"; };
+		3F694F861A7D108900ADE4DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mobile/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		3F92B8121CAF4C3AB25F536F /* CDVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = org.apache.cordova.console/CDVLogger.m; sourceTree = "<group>"; };
+		44E9AAC7D60147E890654C74 /* RKResponseMapperOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKResponseMapperOperation.h; path = com.bluecats.beacons/RKResponseMapperOperation.h; sourceTree = "<group>"; };
+		452306EFDBB648D29CFB2DA7 /* TKState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKState.h; path = com.bluecats.beacons/TKState.h; sourceTree = "<group>"; };
+		474E1DDF6C2447B194AEA83E /* RKManagedObjectCaching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectCaching.h; path = com.bluecats.beacons/RKManagedObjectCaching.h; sourceTree = "<group>"; };
+		4A6E80262798425FAB974855 /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = org.apache.cordova.device/CDVDevice.h; sourceTree = "<group>"; };
+		4ACE83BDFC954D09A7B5FF01 /* BCPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCPoint.h; path = com.bluecats.beacons/BCPoint.h; sourceTree = "<group>"; };
+		4FCE78988E3941D99F4816B7 /* BCLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCLocalNotification.h; path = com.bluecats.beacons/BCLocalNotification.h; sourceTree = "<group>"; };
+		50EE5EE1A9AA4F1982709956 /* RKObjectMappingOperationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectMappingOperationDataSource.h; path = com.bluecats.beacons/RKObjectMappingOperationDataSource.h; sourceTree = "<group>"; };
+		51CC98B4D9554921AC8E4A13 /* RKURLEncodedSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKURLEncodedSerialization.h; path = com.bluecats.beacons/RKURLEncodedSerialization.h; sourceTree = "<group>"; };
+		572B1799619C4F01ABCEB33E /* BCBeaconDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCBeaconDataSource.h; path = com.bluecats.beacons/BCBeaconDataSource.h; sourceTree = "<group>"; };
+		5758A19BDB7445D981298D9A /* RKManagedObjectStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectStore.h; path = com.bluecats.beacons/RKManagedObjectStore.h; sourceTree = "<group>"; };
+		58808884C55741A196BF1786 /* CoreData.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5AA55E8756CB40AB90B7829B /* RKPropertyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPropertyMapping.h; path = com.bluecats.beacons/RKPropertyMapping.h; sourceTree = "<group>"; };
+		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5BF60F63277A4C3D9ED6D8FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		607D0AAA71E94A28B344E8A1 /* RKPropertyInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPropertyInspector.h; path = com.bluecats.beacons/RKPropertyInspector.h; sourceTree = "<group>"; };
+		60EBE732537047F18C46B08E /* RKHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKHTTPRequestOperation.h; path = com.bluecats.beacons/RKHTTPRequestOperation.h; sourceTree = "<group>"; };
+		60FB9A0DC14A4BB4B41CBEAF /* BCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCEvent.h; path = com.bluecats.beacons/BCEvent.h; sourceTree = "<group>"; };
+		65FAD0A9F002455AAE7CB5F7 /* RKTestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTestHelpers.h; path = com.bluecats.beacons/RKTestHelpers.h; sourceTree = "<group>"; };
+		68C8A2A809FA482C8F869C82 /* Foundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68CC43B48B244B5689F89017 /* RKSearchPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKSearchPredicate.h; path = com.bluecats.beacons/RKSearchPredicate.h; sourceTree = "<group>"; };
+		6B0F54E6A92C409B9849BD03 /* RKSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKSerialization.h; path = com.bluecats.beacons/RKSerialization.h; sourceTree = "<group>"; };
+		6B1C54EDA1364B0D91C7EDFF /* TKStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKStateMachine.h; path = com.bluecats.beacons/TKStateMachine.h; sourceTree = "<group>"; };
+		6C206C013A8743529317A059 /* RKSearchWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKSearchWord.h; path = com.bluecats.beacons/RKSearchWord.h; sourceTree = "<group>"; };
+		6E6111CDE8E94880B9E96CC6 /* RKObjectMappingMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectMappingMatcher.h; path = com.bluecats.beacons/RKObjectMappingMatcher.h; sourceTree = "<group>"; };
+		6F97C518D81441A782CDF4B7 /* CDVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = org.apache.cordova.device/CDVDevice.m; sourceTree = "<group>"; };
+		71C9D40DA85B400D95E6E454 /* BCTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCTrigger.h; path = com.bluecats.beacons/BCTrigger.h; sourceTree = "<group>"; };
+		742096761E0746EFB139AE6B /* BlueCatsSDKCDVPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlueCatsSDKCDVPlugin.h; path = com.bluecats.beacons/BlueCatsSDKCDVPlugin.h; sourceTree = "<group>"; };
+		74BEEBD94D924D99A80F114F /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Search.h; path = com.bluecats.beacons/Search.h; sourceTree = "<group>"; };
+		76E5E347D3E04DCDA65214D1 /* UIWebViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebViewExtension.h; path = com.ionic.keyboard/UIWebViewExtension.h; sourceTree = "<group>"; };
+		779B260BFC6B4C1983BF25B9 /* RKRequestDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRequestDescriptor.h; path = com.bluecats.beacons/RKRequestDescriptor.h; sourceTree = "<group>"; };
+		79794F8DBF5E402AA771D8E1 /* UIWebViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebViewExtension.m; path = com.ionic.keyboard/UIWebViewExtension.m; sourceTree = "<group>"; };
+		7A2799CDA9D64666B04BA91E /* RKMapperOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMapperOperation.h; path = com.bluecats.beacons/RKMapperOperation.h; sourceTree = "<group>"; };
+		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
+		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
+		7E7966D61810823500FA85AD /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50.png"; sourceTree = "<group>"; };
+		7E7966D71810823500FA85AD /* icon-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50@2x.png"; sourceTree = "<group>"; };
+		7E7966D81810823500FA85AD /* icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60.png"; sourceTree = "<group>"; };
+		7E7966D91810823500FA85AD /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
+		7E7966DA1810823500FA85AD /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76.png"; sourceTree = "<group>"; };
+		7E7966DB1810823500FA85AD /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
+		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
+		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
+		80C91E3D99FB4B30A91A48F2 /* lcl_config_logger_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lcl_config_logger_RK.h; path = com.bluecats.beacons/lcl_config_logger_RK.h; sourceTree = "<group>"; };
+		81C0754B86694EC38BD9C631 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = com.bluecats.beacons/AFImageRequestOperation.h; sourceTree = "<group>"; };
+		82BE6EB24A0B4080A780E5F7 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = com.bluecats.beacons/AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		82FBE5B38BCD4BAC842E4B28 /* RKDynamicMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKDynamicMapping.h; path = com.bluecats.beacons/RKDynamicMapping.h; sourceTree = "<group>"; };
+		874CEA92A9C64554B322C235 /* RKDictionaryUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKDictionaryUtilities.h; path = com.bluecats.beacons/RKDictionaryUtilities.h; sourceTree = "<group>"; };
+		879AC1C1659847DBB578F7AE /* RKEntityByAttributeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKEntityByAttributeCache.h; path = com.bluecats.beacons/RKEntityByAttributeCache.h; sourceTree = "<group>"; };
+		888C92ECFAB84E58A67F6A5B /* CDVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = org.apache.cordova.console/CDVLogger.h; sourceTree = "<group>"; };
+		8C060C93C8D84DD1B566841E /* RKResponseDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKResponseDescriptor.h; path = com.bluecats.beacons/RKResponseDescriptor.h; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* mobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "mobile-Info.plist"; path = "../mobile-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8E7421646CFD4DA9851391CE /* BCMicroLocation+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BCMicroLocation+JSON.h"; path = "com.bluecats.beacons/BCMicroLocation+JSON.h"; sourceTree = "<group>"; };
+		8FAC794D0AAE4CE0869ACA44 /* AdSupport.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		906D78E7CB9B4EA0B7F1F1EA /* RKEntityCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKEntityCache.h; path = com.bluecats.beacons/RKEntityCache.h; sourceTree = "<group>"; };
+		9197D095999246819ED5309A /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = com.bluecats.beacons/AFHTTPClient.h; sourceTree = "<group>"; };
+		919F47FDD9C74EC29FAFB19C /* RKMappingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMappingTest.h; path = com.bluecats.beacons/RKMappingTest.h; sourceTree = "<group>"; };
+		92C27638F1954581A3530147 /* RKPropertyInspector+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RKPropertyInspector+CoreData.h"; path = "com.bluecats.beacons/RKPropertyInspector+CoreData.h"; sourceTree = "<group>"; };
+		957A58A91F534ECB8167FFED /* RKMappingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMappingResult.h; path = com.bluecats.beacons/RKMappingResult.h; sourceTree = "<group>"; };
+		971EA42F3A3944E3A298D1BF /* RKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMacros.h; path = com.bluecats.beacons/RKMacros.h; sourceTree = "<group>"; };
+		97C93A470C3F4947983E83D5 /* BCCustomValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCCustomValue.h; path = com.bluecats.beacons/BCCustomValue.h; sourceTree = "<group>"; };
+		98996CFE52F9456988AF181B /* ISO8601DateFormatterValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISO8601DateFormatterValueTransformer.h; path = com.bluecats.beacons/ISO8601DateFormatterValueTransformer.h; sourceTree = "<group>"; };
+		9C9417A09A224ECD93185992 /* RestKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestKit.h; path = com.bluecats.beacons/RestKit.h; sourceTree = "<group>"; };
+		9F4D39FB9FEA47CFA197CF95 /* LCLNSLog_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCLNSLog_RK.h; path = com.bluecats.beacons/LCLNSLog_RK.h; sourceTree = "<group>"; };
+		A13F65D23378480FB144EFEA /* RKManagedObjectMappingOperationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectMappingOperationDataSource.h; path = com.bluecats.beacons/RKManagedObjectMappingOperationDataSource.h; sourceTree = "<group>"; };
+		A2773E1833E9463099FC6937 /* BlueCatsSDKCDVPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlueCatsSDKCDVPlugin.m; path = com.bluecats.beacons/BlueCatsSDKCDVPlugin.m; sourceTree = "<group>"; };
+		A4DE2CCC679B4C47A886EC97 /* BCMicroLocation+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BCMicroLocation+JSON.m"; path = "com.bluecats.beacons/BCMicroLocation+JSON.m"; sourceTree = "<group>"; };
+		A83F0845DDE34EB49FCAB8AB /* RKFetchRequestManagedObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKFetchRequestManagedObjectCache.h; path = com.bluecats.beacons/RKFetchRequestManagedObjectCache.h; sourceTree = "<group>"; };
+		A923BEADEE3343B2A42B78E8 /* CoreLocation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AC05E7A802A14029AE0E9D8E /* RKErrorMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKErrorMessage.h; path = com.bluecats.beacons/RKErrorMessage.h; sourceTree = "<group>"; };
+		AEAB6F724C9C4888B72AD2A7 /* lcl_config_components_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lcl_config_components_RK.h; path = com.bluecats.beacons/lcl_config_components_RK.h; sourceTree = "<group>"; };
+		AED924430EE14428BD0BD1C1 /* RKRouteSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRouteSet.h; path = com.bluecats.beacons/RKRouteSet.h; sourceTree = "<group>"; };
+		AF5B4B9D08A340DCBE727614 /* RKInMemoryManagedObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKInMemoryManagedObjectCache.h; path = com.bluecats.beacons/RKInMemoryManagedObjectCache.h; sourceTree = "<group>"; };
+		AFFCD89408604D2784CDCD59 /* RKErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKErrors.h; path = com.bluecats.beacons/RKErrors.h; sourceTree = "<group>"; };
+		B08ABDEF6D2C493FAFDCCFED /* RKRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRoute.h; path = com.bluecats.beacons/RKRoute.h; sourceTree = "<group>"; };
+		B0AD68AFF3704B619C367750 /* RKPathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPathUtilities.h; path = com.bluecats.beacons/RKPathUtilities.h; sourceTree = "<group>"; };
+		B485D32DAC01433E82546CC5 /* BCCategoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCCategoryDataSource.h; path = com.bluecats.beacons/BCCategoryDataSource.h; sourceTree = "<group>"; };
+		B534E05AEDBA498886EDF82D /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = com.bluecats.beacons/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		B89D4E7CB2254E10AAFA3663 /* TransitionKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitionKit.h; path = com.bluecats.beacons/TransitionKit.h; sourceTree = "<group>"; };
+		BACE60B0401D41B2A554BA6E /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = com.bluecats.beacons/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		BB6598191EFA4633A8C7837F /* RKPathMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPathMatcher.h; path = com.bluecats.beacons/RKPathMatcher.h; sourceTree = "<group>"; };
+		BCB3BC6E40284101BAB46103 /* RKManagedObjectRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectRequestOperation.h; path = com.bluecats.beacons/RKManagedObjectRequestOperation.h; sourceTree = "<group>"; };
+		BE19C149B62E4C5CB22866E9 /* RKConnectionDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKConnectionDescription.h; path = com.bluecats.beacons/RKConnectionDescription.h; sourceTree = "<group>"; };
+		BE593556F008410E8B2F9B51 /* RKPaginator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPaginator.h; path = com.bluecats.beacons/RKPaginator.h; sourceTree = "<group>"; };
+		BF24B626D8AB4898BAD1031D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = com.bluecats.beacons/AFNetworking.h; sourceTree = "<group>"; };
+		C0CA719D75284877A465F72F /* BlueCatsSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlueCatsSDK.h; path = com.bluecats.beacons/BlueCatsSDK.h; sourceTree = "<group>"; };
+		C25BE5432B6847B393158BDC /* NSManagedObject+RKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+RKAdditions.h"; path = "com.bluecats.beacons/NSManagedObject+RKAdditions.h"; sourceTree = "<group>"; };
+		C525207E2769464E8D42AD37 /* Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Testing.h; path = com.bluecats.beacons/Testing.h; sourceTree = "<group>"; };
+		C611018F7A00416B87792929 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = com.bluecats.beacons/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		C6224EE2EB4F49B9B152A5C8 /* BCSite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCSite.h; path = com.bluecats.beacons/BCSite.h; sourceTree = "<group>"; };
+		C7CF7C942C4D4CEE9D377252 /* BCBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCBeacon.h; path = com.bluecats.beacons/BCBeacon.h; sourceTree = "<group>"; };
+		C89F0DE7D06B4E9D945B41D0 /* RKRelationshipConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRelationshipConnectionOperation.h; path = com.bluecats.beacons/RKRelationshipConnectionOperation.h; sourceTree = "<group>"; };
+		CAE7272149A446D1A1D683EE /* CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreData.h; path = com.bluecats.beacons/CoreData.h; sourceTree = "<group>"; };
+		CC438AE1C06640EFA3974FB4 /* RKConnectionTestExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKConnectionTestExpectation.h; path = com.bluecats.beacons/RKConnectionTestExpectation.h; sourceTree = "<group>"; };
+		CEAF762F799D48EDA4927D12 /* RKHTTPUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKHTTPUtilities.h; path = com.bluecats.beacons/RKHTTPUtilities.h; sourceTree = "<group>"; };
+		CF0E4A991DE94C0582ACE1F3 /* IonicKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = com.ionic.keyboard/IonicKeyboard.h; sourceTree = "<group>"; };
+		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		D4F224B7426049B1847B64CC /* RKObjectRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectRequestOperation.h; path = com.bluecats.beacons/RKObjectRequestOperation.h; sourceTree = "<group>"; };
+		D51CC9C78900466FBE71C8A3 /* RKMIMETypeSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMIMETypeSerialization.h; path = com.bluecats.beacons/RKMIMETypeSerialization.h; sourceTree = "<group>"; };
+		DA5AE1C978554F22B1EC14D5 /* Security.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DADEEA8699B24BFBA1898FA5 /* RKOperationStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKOperationStateMachine.h; path = com.bluecats.beacons/RKOperationStateMachine.h; sourceTree = "<group>"; };
+		DCC9BDF5EE60473B9D5AA53D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "com.bluecats.beacons/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		DDB1EE7BD9AF4DA399868708 /* RKObjectParameterization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectParameterization.h; path = com.bluecats.beacons/RKObjectParameterization.h; sourceTree = "<group>"; };
+		DEB7473D8CB8441FA906DF9B /* RKAttributeMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKAttributeMapping.h; path = com.bluecats.beacons/RKAttributeMapping.h; sourceTree = "<group>"; };
+		DF7BAB2012F44E05851B0A43 /* RKStringTokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKStringTokenizer.h; path = com.bluecats.beacons/RKStringTokenizer.h; sourceTree = "<group>"; };
+		E092121AA2DE4FD78BC9ABC8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		E0CC991F75C641D489685546 /* RKMappingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMappingOperation.h; path = com.bluecats.beacons/RKMappingOperation.h; sourceTree = "<group>"; };
+		E1092B6EAA964274967D4D05 /* RKPropertyMappingTestExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPropertyMappingTestExpectation.h; path = com.bluecats.beacons/RKPropertyMappingTestExpectation.h; sourceTree = "<group>"; };
+		E15867A284044ED1A015CE73 /* BCMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCMap.h; path = com.bluecats.beacons/BCMap.h; sourceTree = "<group>"; };
+		E6CE192C40BA4AA4A5B9F56C /* RKNSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKNSJSONSerialization.h; path = com.bluecats.beacons/RKNSJSONSerialization.h; sourceTree = "<group>"; };
+		E8F85E1E88D6474289FA531E /* libBlueCatsSDK.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libBlueCatsSDK.a; path = mobile/Plugins/com.bluecats.beacons/libBlueCatsSDK.a; sourceTree = "<group>"; };
+		E9211D7E00E54D419459DCB7 /* BCEventFilterContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCEventFilterContext.h; path = com.bluecats.beacons/BCEventFilterContext.h; sourceTree = "<group>"; };
+		EB2469D940744995829E4137 /* ObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectMapping.h; path = com.bluecats.beacons/ObjectMapping.h; sourceTree = "<group>"; };
+		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		EB903FE066954970922FCED1 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		ED6425FBCC4742AA8D8C50B3 /* BCAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCAddress.h; path = com.bluecats.beacons/BCAddress.h; sourceTree = "<group>"; };
+		EF61BF344B1C4F979CA80B06 /* BCMicroLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCMicroLocation.h; path = com.bluecats.beacons/BCMicroLocation.h; sourceTree = "<group>"; };
+		F090186195484118A5E5E98E /* RKSearchIndexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKSearchIndexer.h; path = com.bluecats.beacons/RKSearchIndexer.h; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = mobile/config.xml; sourceTree = "<group>"; };
+		F90792C0208E4BAB8486143D /* IonicKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IonicKeyboard.m; path = com.ionic.keyboard/IonicKeyboard.m; sourceTree = "<group>"; };
+		F9E93B3A2EB44AD0A397E8E2 /* TKEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKEvent.h; path = com.bluecats.beacons/TKEvent.h; sourceTree = "<group>"; };
+		FA6ACBD7AA3647C9AF0702C3 /* BCMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCMapPoint.h; path = com.bluecats.beacons/BCMapPoint.h; sourceTree = "<group>"; };
+		FDF013F0474A4C139A41BD76 /* BCEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCEventManager.h; path = com.bluecats.beacons/BCEventManager.h; sourceTree = "<group>"; };
+		FECE84F97C6A41818D602291 /* libRestKit.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libRestKit.a; path = mobile/Plugins/com.bluecats.beacons/libRestKit.a; sourceTree = "<group>"; };
+		FF308C620F53495EBEF3804E /* BCMicroLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BCMicroLocationManager.h; path = com.bluecats.beacons/BCMicroLocationManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				A211D64232F54C71BBA09291 /* libRestKit.a in Frameworks */,
+				E25E48C5BA7449F9870AA974 /* libBlueCatsSDK.a in Frameworks */,
+				B105F452C94348C7A1D1A7DF /* Foundation.framework in Frameworks */,
+				0C7748CD852944ACBEB3AC4F /* CoreData.framework in Frameworks */,
+				96A2BA6C6AE9428BA1EB7719 /* AdSupport.framework in Frameworks */,
+				7ADC837CDEF24DD7A81D8271 /* SystemConfiguration.framework in Frameworks */,
+				4699751805174F378432A820 /* CoreBluetooth.framework in Frameworks */,
+				2FC1B3EDB76F4C98AC5F8FF0 /* CoreLocation.framework in Frameworks */,
+				F9A919AC0C514CD0B8A13212 /* Security.framework in Frameworks */,
+				3936C7FA6105402FB33F2C81 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = mobile/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* mobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF21871DA7A0020F90C /* merges */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* mobile-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			path = mobile;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F694F861A7D108900ADE4DF /* Images.xcassets */,
+				308D052D1370CCF300D202BF /* icons */,
+				308D05311370CCF300D202BF /* splash */,
+				8D1107310486CEB800E47090 /* mobile-Info.plist */,
+			);
+			name = Resources;
+			path = mobile/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				FECE84F97C6A41818D602291 /* libRestKit.a */,
+				E8F85E1E88D6474289FA531E /* libBlueCatsSDK.a */,
+				68C8A2A809FA482C8F869C82 /* Foundation.framework */,
+				58808884C55741A196BF1786 /* CoreData.framework */,
+				8FAC794D0AAE4CE0869ACA44 /* AdSupport.framework */,
+				5BF60F63277A4C3D9ED6D8FF /* SystemConfiguration.framework */,
+				E092121AA2DE4FD78BC9ABC8 /* CoreBluetooth.framework */,
+				A923BEADEE3343B2A42B78E8 /* CoreLocation.framework */,
+				DA5AE1C978554F22B1EC14D5 /* Security.framework */,
+				EB903FE066954970922FCED1 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A2773E1833E9463099FC6937 /* BlueCatsSDKCDVPlugin.m */,
+				A4DE2CCC679B4C47A886EC97 /* BCMicroLocation+JSON.m */,
+				742096761E0746EFB139AE6B /* BlueCatsSDKCDVPlugin.h */,
+				8E7421646CFD4DA9851391CE /* BCMicroLocation+JSON.h */,
+				9197D095999246819ED5309A /* AFHTTPClient.h */,
+				C611018F7A00416B87792929 /* AFHTTPRequestOperation.h */,
+				81C0754B86694EC38BD9C631 /* AFImageRequestOperation.h */,
+				3918A00917C541AE82104CFB /* AFJSONRequestOperation.h */,
+				B534E05AEDBA498886EDF82D /* AFNetworkActivityIndicatorManager.h */,
+				BF24B626D8AB4898BAD1031D /* AFNetworking.h */,
+				BACE60B0401D41B2A554BA6E /* AFPropertyListRequestOperation.h */,
+				23BFF5AA8AB64ED3A1420744 /* AFURLConnectionOperation.h */,
+				82BE6EB24A0B4080A780E5F7 /* AFXMLRequestOperation.h */,
+				CAE7272149A446D1A1D683EE /* CoreData.h */,
+				98996CFE52F9456988AF181B /* ISO8601DateFormatterValueTransformer.h */,
+				AEAB6F724C9C4888B72AD2A7 /* lcl_config_components_RK.h */,
+				0EE741AAE6DE43BEB272785D /* lcl_config_extensions_RK.h */,
+				80C91E3D99FB4B30A91A48F2 /* lcl_config_logger_RK.h */,
+				2458D5ED8DB3497693ACAB94 /* lcl_RK.h */,
+				9F4D39FB9FEA47CFA197CF95 /* LCLNSLog_RK.h */,
+				2319F5C327574695ADC2874E /* Network.h */,
+				C25BE5432B6847B393158BDC /* NSManagedObject+RKAdditions.h */,
+				1BFD4F695723455A9C70F8D7 /* NSManagedObjectContext+RKAdditions.h */,
+				EB2469D940744995829E4137 /* ObjectMapping.h */,
+				9C9417A09A224ECD93185992 /* RestKit.h */,
+				DEB7473D8CB8441FA906DF9B /* RKAttributeMapping.h */,
+				2F02904848324612A7C5BD94 /* RKBenchmark.h */,
+				BE19C149B62E4C5CB22866E9 /* RKConnectionDescription.h */,
+				CC438AE1C06640EFA3974FB4 /* RKConnectionTestExpectation.h */,
+				874CEA92A9C64554B322C235 /* RKDictionaryUtilities.h */,
+				388A30EC7E7A40BEA636F2E5 /* RKDotNetDateFormatter.h */,
+				82FBE5B38BCD4BAC842E4B28 /* RKDynamicMapping.h */,
+				879AC1C1659847DBB578F7AE /* RKEntityByAttributeCache.h */,
+				906D78E7CB9B4EA0B7F1F1EA /* RKEntityCache.h */,
+				2943FFFF83D14B5FAF565E4D /* RKEntityMapping.h */,
+				AC05E7A802A14029AE0E9D8E /* RKErrorMessage.h */,
+				AFFCD89408604D2784CDCD59 /* RKErrors.h */,
+				A83F0845DDE34EB49FCAB8AB /* RKFetchRequestManagedObjectCache.h */,
+				60EBE732537047F18C46B08E /* RKHTTPRequestOperation.h */,
+				CEAF762F799D48EDA4927D12 /* RKHTTPUtilities.h */,
+				AF5B4B9D08A340DCBE727614 /* RKInMemoryManagedObjectCache.h */,
+				0B3CBFD484C04FD0B61A814C /* RKISO8601DateFormatter.h */,
+				2A9D652A4FA94B2AA321DF92 /* RKLog.h */,
+				971EA42F3A3944E3A298D1BF /* RKMacros.h */,
+				474E1DDF6C2447B194AEA83E /* RKManagedObjectCaching.h */,
+				26F90E5FF53C42C58D86B357 /* RKManagedObjectImporter.h */,
+				A13F65D23378480FB144EFEA /* RKManagedObjectMappingOperationDataSource.h */,
+				BCB3BC6E40284101BAB46103 /* RKManagedObjectRequestOperation.h */,
+				5758A19BDB7445D981298D9A /* RKManagedObjectStore.h */,
+				216A2E5B083C4030BD7FA40C /* RKManagedObjectStore+RKSearchAdditions.h */,
+				7A2799CDA9D64666B04BA91E /* RKMapperOperation.h */,
+				0710BA5CA07E449B849A46B3 /* RKMapping.h */,
+				0579318D2BDE4EBC97982995 /* RKMappingErrors.h */,
+				E0CC991F75C641D489685546 /* RKMappingOperation.h */,
+				2B5CEC8FFDAB4B04AF0969C8 /* RKMappingOperationDataSource.h */,
+				957A58A91F534ECB8167FFED /* RKMappingResult.h */,
+				919F47FDD9C74EC29FAFB19C /* RKMappingTest.h */,
+				020EF7BBEE68427FA72342CE /* RKMIMETypes.h */,
+				D51CC9C78900466FBE71C8A3 /* RKMIMETypeSerialization.h */,
+				E6CE192C40BA4AA4A5B9F56C /* RKNSJSONSerialization.h */,
+				0C2FC09426BE458DAA15BEDB /* RKObjectManager.h */,
+				357AAA572766463C8D20289D /* RKObjectMapping.h */,
+				6E6111CDE8E94880B9E96CC6 /* RKObjectMappingMatcher.h */,
+				50EE5EE1A9AA4F1982709956 /* RKObjectMappingOperationDataSource.h */,
+				DDB1EE7BD9AF4DA399868708 /* RKObjectParameterization.h */,
+				D4F224B7426049B1847B64CC /* RKObjectRequestOperation.h */,
+				2868F5E7B8D54A419EFB7A0A /* RKObjectRequestOperationSubclass.h */,
+				3F0C08925CF64958A8C61C38 /* RKObjectUtilities.h */,
+				DADEEA8699B24BFBA1898FA5 /* RKOperationStateMachine.h */,
+				BE593556F008410E8B2F9B51 /* RKPaginator.h */,
+				BB6598191EFA4633A8C7837F /* RKPathMatcher.h */,
+				B0AD68AFF3704B619C367750 /* RKPathUtilities.h */,
+				607D0AAA71E94A28B344E8A1 /* RKPropertyInspector.h */,
+				92C27638F1954581A3530147 /* RKPropertyInspector+CoreData.h */,
+				5AA55E8756CB40AB90B7829B /* RKPropertyMapping.h */,
+				E1092B6EAA964274967D4D05 /* RKPropertyMappingTestExpectation.h */,
+				C89F0DE7D06B4E9D945B41D0 /* RKRelationshipConnectionOperation.h */,
+				059C369B4158486EB553DCE4 /* RKRelationshipMapping.h */,
+				779B260BFC6B4C1983BF25B9 /* RKRequestDescriptor.h */,
+				8C060C93C8D84DD1B566841E /* RKResponseDescriptor.h */,
+				44E9AAC7D60147E890654C74 /* RKResponseMapperOperation.h */,
+				B08ABDEF6D2C493FAFDCCFED /* RKRoute.h */,
+				2E0A8C7C3DF34B8CB738F56C /* RKRouter.h */,
+				AED924430EE14428BD0BD1C1 /* RKRouteSet.h */,
+				F090186195484118A5E5E98E /* RKSearchIndexer.h */,
+				68CC43B48B244B5689F89017 /* RKSearchPredicate.h */,
+				6C206C013A8743529317A059 /* RKSearchWord.h */,
+				1B26605F0A3B4A76BBBAA735 /* RKSearchWordEntity.h */,
+				6B0F54E6A92C409B9849BD03 /* RKSerialization.h */,
+				DF7BAB2012F44E05851B0A43 /* RKStringTokenizer.h */,
+				109365F8476147018F05E54A /* RKTestFactory.h */,
+				3911DCB0A0D9412FB5225521 /* RKTestFixture.h */,
+				65FAD0A9F002455AAE7CB5F7 /* RKTestHelpers.h */,
+				1D0C494A064148E0AA4825E8 /* RKTestNotificationObserver.h */,
+				51CC98B4D9554921AC8E4A13 /* RKURLEncodedSerialization.h */,
+				29638E03EB994113B99EA752 /* RKValueTransformers.h */,
+				74BEEBD94D924D99A80F114F /* Search.h */,
+				3A1FEE7198FA47419B3A8974 /* SOCKit.h */,
+				3BE43B74182E49EA942C2A8F /* Support.h */,
+				C525207E2769464E8D42AD37 /* Testing.h */,
+				F9E93B3A2EB44AD0A397E8E2 /* TKEvent.h */,
+				452306EFDBB648D29CFB2DA7 /* TKState.h */,
+				6B1C54EDA1364B0D91C7EDFF /* TKStateMachine.h */,
+				B89D4E7CB2254E10AAFA3663 /* TransitionKit.h */,
+				DCC9BDF5EE60473B9D5AA53D /* UIImageView+AFNetworking.h */,
+				C0CA719D75284877A465F72F /* BlueCatsSDK.h */,
+				1B6470FABCC7433AA93AB45C /* BCApp.h */,
+				FF308C620F53495EBEF3804E /* BCMicroLocationManager.h */,
+				EF61BF344B1C4F979CA80B06 /* BCMicroLocation.h */,
+				ED6425FBCC4742AA8D8C50B3 /* BCAddress.h */,
+				C7CF7C942C4D4CEE9D377252 /* BCBeacon.h */,
+				572B1799619C4F01ABCEB33E /* BCBeaconDataSource.h */,
+				217BDA808F89448582D466AF /* BCCategory.h */,
+				B485D32DAC01433E82546CC5 /* BCCategoryDataSource.h */,
+				97C93A470C3F4947983E83D5 /* BCCustomValue.h */,
+				4FCE78988E3941D99F4816B7 /* BCLocalNotification.h */,
+				0928087E3514400986CC0DEB /* BCLocalNotificationManager.h */,
+				E15867A284044ED1A015CE73 /* BCMap.h */,
+				FA6ACBD7AA3647C9AF0702C3 /* BCMapPoint.h */,
+				4ACE83BDFC954D09A7B5FF01 /* BCPoint.h */,
+				120975CC0FD44773981176C5 /* BCResource.h */,
+				C6224EE2EB4F49B9B152A5C8 /* BCSite.h */,
+				FDF013F0474A4C139A41BD76 /* BCEventManager.h */,
+				60FB9A0DC14A4BB4B41CBEAF /* BCEvent.h */,
+				33F21260F44940E99A90457C /* BCTriggeredEvent.h */,
+				71C9D40DA85B400D95E6E454 /* BCTrigger.h */,
+				3276F068C18C4741B5527ECA /* BCEventFilter.h */,
+				E9211D7E00E54D419459DCB7 /* BCEventFilterContext.h */,
+				F90792C0208E4BAB8486143D /* IonicKeyboard.m */,
+				79794F8DBF5E402AA771D8E1 /* UIWebViewExtension.m */,
+				CF0E4A991DE94C0582ACE1F3 /* IonicKeyboard.h */,
+				76E5E347D3E04DCDA65214D1 /* UIWebViewExtension.h */,
+				3F92B8121CAF4C3AB25F536F /* CDVLogger.m */,
+				888C92ECFAB84E58A67F6A5B /* CDVLogger.h */,
+				6F97C518D81441A782CDF4B7 /* CDVDevice.m */,
+				4A6E80262798425FAB974855 /* CDVDevice.h */,
+			);
+			name = Plugins;
+			path = mobile/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		308D052D1370CCF300D202BF /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				30C1856519D5FC0A00212699 /* icon-60@3x.png */,
+				7E7966D41810823500FA85AD /* icon-40.png */,
+				7E7966D51810823500FA85AD /* icon-40@2x.png */,
+				7E7966D61810823500FA85AD /* icon-50.png */,
+				7E7966D71810823500FA85AD /* icon-50@2x.png */,
+				7E7966D81810823500FA85AD /* icon-60.png */,
+				7E7966D91810823500FA85AD /* icon-60@2x.png */,
+				7E7966DA1810823500FA85AD /* icon-76.png */,
+				7E7966DB1810823500FA85AD /* icon-76@2x.png */,
+				7E7966DC1810823500FA85AD /* icon-small.png */,
+				7E7966DD1810823500FA85AD /* icon-small@2x.png */,
+				30FC414816E50CA1004E6F35 /* icon-72@2x.png */,
+				308D052E1370CCF300D202BF /* icon-72.png */,
+				308D052F1370CCF300D202BF /* icon.png */,
+				308D05301370CCF300D202BF /* icon@2x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		308D05311370CCF300D202BF /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				30B4F2FD19D5E07200D9F7D8 /* Default-667h.png */,
+				30B4F2FE19D5E07200D9F7D8 /* Default-736h.png */,
+				30B4F2FF19D5E07200D9F7D8 /* Default-Landscape-736h.png */,
+				D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */,
+				3088BBB7154F3926009F9C59 /* Default-Landscape@2x~ipad.png */,
+				3088BBB8154F3926009F9C59 /* Default-Landscape~ipad.png */,
+				3088BBB9154F3926009F9C59 /* Default-Portrait@2x~ipad.png */,
+				3088BBBA154F3926009F9C59 /* Default-Portrait~ipad.png */,
+				3088BBBB154F3926009F9C59 /* Default@2x~iphone.png */,
+				3088BBBC154F3926009F9C59 /* Default~iphone.png */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "mobile" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = mobile;
+			productName = mobile;
+			productReference = 1D6058910D05DD3D006BFB54 /* mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = T4VE55FBHQ;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				es,
+				de,
+				se,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7966E41810823500FA85AD /* icon-76.png in Resources */,
+				7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */,
+				308D05371370CCF300D202BF /* icon-72.png in Resources */,
+				30B4F30119D5E07200D9F7D8 /* Default-736h.png in Resources */,
+				308D05381370CCF300D202BF /* icon.png in Resources */,
+				308D05391370CCF300D202BF /* icon@2x.png in Resources */,
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				7E7966E01810823500FA85AD /* icon-50.png in Resources */,
+				7E7966E31810823500FA85AD /* icon-60@2x.png in Resources */,
+				3F694F871A7D108900ADE4DF /* Images.xcassets in Resources */,
+				7E7966E61810823500FA85AD /* icon-small.png in Resources */,
+				3088BBBD154F3926009F9C59 /* Default-Landscape@2x~ipad.png in Resources */,
+				3088BBBE154F3926009F9C59 /* Default-Landscape~ipad.png in Resources */,
+				3088BBBF154F3926009F9C59 /* Default-Portrait@2x~ipad.png in Resources */,
+				7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */,
+				3088BBC0154F3926009F9C59 /* Default-Portrait~ipad.png in Resources */,
+				30B4F30019D5E07200D9F7D8 /* Default-667h.png in Resources */,
+				7E7966DE1810823500FA85AD /* icon-40.png in Resources */,
+				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
+				7E7966E21810823500FA85AD /* icon-60.png in Resources */,
+				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
+				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
+				30B4F30219D5E07200D9F7D8 /* Default-Landscape-736h.png in Resources */,
+				30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */,
+				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
+				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
+				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cordova/lib/copy-www-build-step.sh";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				F1B7D53E5E434F2C96B72716 /* BlueCatsSDKCDVPlugin.m in Sources */,
+				965E9575F1A84FC8B6B0FAB5 /* BCMicroLocation+JSON.m in Sources */,
+				B0E5F261610F46EE811DA65A /* IonicKeyboard.m in Sources */,
+				7B5492EB8A4E4104A81A29DC /* UIWebViewExtension.m in Sources */,
+				65E4DC8A9B0C4C4F9C11382C /* CDVLogger.m in Sources */,
+				3B0D7E3C2B2E4BA6B6F95D4C /* CDVDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mobile/mobile-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "mobile/mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/mobile/Plugins/com.bluecats.beacons\"",
+					"\"$(SRCROOT)/mobile/Plugins/com.bluecats.beacons\"",
+				);
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				PRODUCT_NAME = mobile;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mobile/mobile-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "mobile/mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/mobile/Plugins/com.bluecats.beacons\"",
+					"\"$(SRCROOT)/mobile/Plugins/com.bluecats.beacons\"",
+				);
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				PRODUCT_NAME = mobile;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
