@@ -220,7 +220,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     width: 70px;
     height: 70px;
     background-color: #fff;
-    display: table-cell;
+    display: table-cell !important;
     vertical-align: middle;
     box-shadow: 0 0 8px rgba(0,0,0, 0.14);
     position: absolute;
@@ -249,7 +249,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
     border-radius: 10px;
     img {
-      border-radius: 10px;
+      border-radius: 0px;
     }
   }
 
@@ -333,5 +333,30 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
+  }
+}
+
+// Dave Insisted that this input be super sexy
+.item.dave-input {
+  height:120px;
+  label {
+    text-align: center;
+    display: block;
+  }
+  .dave-sexy-input {
+    display: inline-block !important;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 1px solid black !important;
+    width: 180px;
+    border-radius: 0;
+    text-align: center;
+    font-size: 45px !important;
+    line-height: 45px !important;
+    height: 66px !important;
+    position: absolute;
+    left: 50%;
+    margin-left:-90px;
   }
 }
